@@ -47257,27 +47257,27 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x3B617AA0</NID>
-              <NAME>sceNet_3B617AA0</NAME>
+              <NAME>sceNetBpfOpen</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB6FC0A5B</NID>
-              <NAME>sceNet_B6FC0A5B</NAME>
+              <NAME>sceNetBpfRead</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBFCFEFF6</NID>
-              <NAME>sceNet_BFCFEFF6</NAME>
+              <NAME>sceNetBpfPoll</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC431A214</NID>
-              <NAME>sceNet_C431A214</NAME>
+              <NAME>sceNetBpfWrite</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDB88F458</NID>
-              <NAME>sceNet_DB88F458</NAME>
+              <NAME>sceNetBpfClose</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xE1F4696F</NID>
-              <NAME>sceNet_E1F4696F</NAME>
+              <NAME>sceNetBpfIoctl</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -47287,27 +47287,27 @@
           <FUNCTIONS>
             <FUNCTION>
               <NID>0x03164B12</NID>
-              <NAME>sceNet_lib_03164B12</NAME>
+              <NAME>sceNetConfig80211CreateRequest</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x05D525E4</NID>
-              <NAME>sceNet_lib_05D525E4</NAME>
+              <NAME>_sce_pspnet_schednetintr_with_evf</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0A5A8751</NID>
-              <NAME>sceNet_lib_0A5A8751</NAME>
+              <NAME>_sce_pspnet_stop_of_adhoc_module_in_if_ethersubr_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0D633F53</NID>
-              <NAME>sceNet_lib_0D633F53</NAME>
+              <NAME>sceNetConfig80211EnterGameMode</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0DFF67F9</NID>
-              <NAME>sceNet_lib_0DFF67F9</NAME>
+              <NAME>sceNetConfig80211GetPowerSave</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x13672F83</NID>
-              <NAME>sceNet_lib_13672F83</NAME>
+              <NAME>_sce_pspnet_start_of_inet_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x13A8B98A</NID>
@@ -47323,7 +47323,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x1F94AFD9</NID>
-              <NAME>sceNet_lib_1F94AFD9</NAME>
+              <NAME>_sce_pspnet_start_of_adhoc_module_in_if_ethersubr_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x205E8D17</NID>
@@ -47335,19 +47335,19 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x2B42872F</NID>
-              <NAME>sceNet_lib_2B42872F</NAME>
+              <NAME>_sce_pspnet_uiomove</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2E005032</NID>
-              <NAME>sceNet_lib_2E005032</NAME>
+              <NAME>_sce_pspnet_start_of_adhoc_module_in_sched</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x31F3CDA1</NID>
-              <NAME>sceNet_lib_31F3CDA1</NAME>
+              <NAME>_sce_pspnet_stop_of_inet_module_in_if_ethersubr_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x33B230BD</NID>
-              <NAME>sceNet_lib_33B230BD</NAME>
+              <NAME>_sce_pspnet_stop_of_adhoc_module_in_sched</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x389728AB</NID>
@@ -47355,11 +47355,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x3B617AA0</NID>
-              <NAME>sceNet_lib_3B617AA0</NAME>
+              <NAME>sceNetBpfOpen</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x41621EB0</NID>
-              <NAME>sceNet_lib_41621EB0</NAME>
+              <NAME>_sce_pspnet_stop_of_inet_module_in_sched</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x41FD8B5C</NID>
@@ -47375,23 +47375,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x45945E8D</NID>
-              <NAME>sceNet_lib_45945E8D</NAME>
+              <NAME>_sce_pspnet_ifplookup_index</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4B2B3416</NID>
-              <NAME>sceNet_lib_4B2B3416</NAME>
+              <NAME>_sce_pspnet_microtime</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4BF9E1DE</NID>
-              <NAME>sceNet_lib_4BF9E1DE</NAME>
+              <NAME>sceNetConfig80211ScanJoinRequest</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4C8FD452</NID>
-              <NAME>sceNet_lib_4C8FD452</NAME>
+              <NAME>_sce_pspnet_stop_of_inet_module_in_if_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4F8F3808</NID>
-              <NAME>sceNet_lib_4F8F3808</NAME>
+              <NAME>sceNetConfig80211GetAuth</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x515B2F33</NID>
@@ -47399,7 +47399,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x51C209B2</NID>
-              <NAME>sceNet_lib_51C209B2</NAME>
+              <NAME>_sce_pspnet_inet_sabort</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5216CBF5</NID>
@@ -47411,23 +47411,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5505D820</NID>
-              <NAME>sceNet_lib_5505D820</NAME>
+              <NAME>_sce_pspnet_stop_of_inet_module_in_ifhandle_ether</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x572AD6ED</NID>
-              <NAME>sceNet_lib_572AD6ED</NAME>
+              <NAME>_sce_pspnet_start_of_pppoe_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5C7C7381</NID>
-              <NAME>sceNet_lib_5C7C7381</NAME>
+              <NAME>_sce_pspnet_stop_of_inet_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5ED457BE</NID>
-              <NAME>sceNet_lib_5ED457BE</NAME>
+              <NAME>_sce_pspnet_start_of_inet_module_in_if_ethersubr_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6B294EE4</NID>
-              <NAME>sceNet_lib_6B294EE4</NAME>
+              <NAME>_sce_pspnet_adhoc_sabort</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6D5D42D7</NID>
@@ -47443,7 +47443,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x757085B0</NID>
-              <NAME>sceNet_lib_757085B0</NAME>
+              <NAME>_sce_pspnet_thread_leave</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7574FDA1</NID>
@@ -47455,7 +47455,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x7AE91FB4</NID>
-              <NAME>sceNet_lib_7AE91FB4</NAME>
+              <NAME>_sce_pspnet_stop_of_ipv6_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7BA3ED91</NID>
@@ -47463,7 +47463,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x7C3B86C5</NID>
-              <NAME>sceNet_lib_7C3B86C5</NAME>
+              <NAME>_sce_pspnet_schednetintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7C86FBA4</NID>
@@ -47475,23 +47475,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x83FE280A</NID>
-              <NAME>sceNet_lib_83FE280A</NAME>
+              <NAME>sceNetConfig80211SetAuth</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x86B6DCD9</NID>
-              <NAME>sceNet_lib_86B6DCD9</NAME>
+              <NAME>_sce_pspnet_start_of_ipv6_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x87DC7A7E</NID>
-              <NAME>sceNet_lib_87DC7A7E</NAME>
+              <NAME>_sce_pspnet_stop_of_pppoe_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x891723D5</NID>
-              <NAME>sceNet_lib_891723D5</NAME>
+              <NAME>sceNetConfig80211SetPowerSave</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8C55B410</NID>
-              <NAME>sceNet_lib_8C55B410</NAME>
+              <NAME>_sce_pspnet_if_nulloutput</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8D33C11D</NID>
@@ -47499,11 +47499,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x92633D8D</NID>
-              <NAME>sceNet_lib_92633D8D</NAME>
+              <NAME>_sce_pspnet_selrecord</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x949F1FBB</NID>
-              <NAME>sceNet_lib_949F1FBB</NAME>
+              <NAME>_sce_pspnet_stop_of_adhoc_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x94B44F26</NID>
@@ -47511,19 +47511,19 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x976AB1E9</NID>
-              <NAME>sceNetEnablePSPWlanReset</NAME>
+              <NAME>_sce_pspnet_start_of_inet_module_in_if_core</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x991FF86D</NID>
-              <NAME>sceNet_lib_991FF86D</NAME>
+              <NAME>_sce_pspnet_start_of_inet_module_in_ifhandle_ether</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA55C914F</NID>
-              <NAME>sceNet_lib_A55C914F</NAME>
+              <NAME>sceNetConfig80211GetBssDesc</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA8B6205A</NID>
-              <NAME>sceNet_lib_A8B6205A</NAME>
+              <NAME>_sce_pspnet_callout_reset_usec</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA93A93E9</NID>
@@ -47535,23 +47535,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAFA11338</NID>
-              <NAME>sceNet_lib_AFA11338</NAME>
+              <NAME>sceNetConfig80211SetConf</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB20F84F8</NID>
-              <NAME>sceNet_lib_B20F84F8</NAME>
+              <NAME>sceNetConfig80211GetConf</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB3A48B7F</NID>
-              <NAME>sceNet_lib_B3A48B7F</NAME>
+              <NAME>_sce_pspnet_start_of_adhoc_module_in_netintr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB68E1EEA</NID>
-              <NAME>sceNet_lib_B68E1EEA</NAME>
+              <NAME>_sce_pspnet_get_selwait_addr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB6FC0A5B</NID>
-              <NAME>sceNet_lib_B6FC0A5B</NAME>
+              <NAME>sceNetBpfRead</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB8C4A858</NID>
@@ -47567,7 +47567,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBFCFEFF6</NID>
-              <NAME>sceNet_lib_BFCFEFF6</NAME>
+              <NAME>sceNetBpfPoll</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC21E18B2</NID>
@@ -47575,7 +47575,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC2EC2EEA</NID>
-              <NAME>sceNet_lib_C2EC2EEA</NAME>
+              <NAME>_sce_pspnet_get_if_core_variables</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC4261339</NID>
@@ -47583,7 +47583,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC431A214</NID>
-              <NAME>sceNet_lib_C431A214</NAME>
+              <NAME>sceNetBpfWrite</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC9C97945</NID>
@@ -47607,11 +47607,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD5B64E37</NID>
-              <NAME>sceNet_lib_D5B64E37</NAME>
+              <NAME>sceNetConfig80211ScanCreateRequest</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD60225A3</NID>
-              <NAME>sceNet_lib_D60225A3</NAME>
+              <NAME>_sce_pspnet_ifplookup_lladdr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD861EF33</NID>
@@ -47619,23 +47619,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDA02F383</NID>
-              <NAME>sceNet_lib_DA02F383</NAME>
+              <NAME>sceNetConfig80211LeaveRequest</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDB88F458</NID>
-              <NAME>sceNet_lib_DB88F458</NAME>
+              <NAME>sceNetBpfClose</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDCBC596E</NID>
-              <NAME>sceNet_lib_DCBC596E</NAME>
+              <NAME>_sce_pspnet_callout_cleanup</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xE155112D</NID>
-              <NAME>sceNet_lib_E155112D</NAME>
+              <NAME>_sce_pspnet_start_of_inet_module_in_sched</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xE1F4696F</NID>
-              <NAME>sceNet_lib_E1F4696F</NAME>
+              <NAME>sceNetBpfIoctl</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEA42B353</NID>
@@ -47643,7 +47643,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEB6DE71A</NID>
-              <NAME>sceNet_lib_EB6DE71A</NAME>
+              <NAME>_sce_pspnet_link_rtrequest</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEDB11CB4</NID>
@@ -47651,15 +47651,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEDCC871E</NID>
-              <NAME>sceNet_lib_EDCC871E</NAME>
+              <NAME>_sce_pspnet_ifafree</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF355C73B</NID>
-              <NAME>sceNet_lib_F355C73B</NAME>
+              <NAME>sceNetConfig80211GetIfInfo</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF6DB0A0B</NID>
-              <NAME>sceNet_lib_F6DB0A0B</NAME>
+              <NAME>_sce_pspnet_tsleep_usec</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA6DE6A6</NID>
@@ -47811,11 +47811,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC13C9307</NID>
-              <NAME>sceNet_lib_C13C9307</NAME>
+              <NAME>sceNetToupper</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x303A2F80</NID>
-              <NAME>sceNet_lib_303A2F80</NAME>
+              <NAME>sceNetStrtoull</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB51452D2</NID>

@@ -68,10 +68,14 @@ def updatePSPLibdoc(nidEntries, xmlFile):
 
 					if libDocNidNameUnk and not dictNidNameUnk:
 						print("Updating {} -> {}".format(functionName, nidEntry.name))
-						function.find("NAME").text = nidEntry.name
-						if len(nidEntry.source) > 0:
-							ET.SubElement(function, "SOURCE").text = nidEntry.source
 						numUpdatedFunctions = numUpdatedFunctions + 1
+
+					function.find("NAME").text = nidEntry.name
+					if len(nidEntry.source) > 0:
+						if function.find("SOURCE") is not None:
+							function.find("SOURCE").text = nidEntry.source
+						else:
+							ET.SubElement(function, "SOURCE").text = nidEntry.source
 
 	functionsKnown = numTotalFunctions - numUnkFunctions + numUpdatedFunctions
 	print("{:#04}/{:#04} unknown NIDs updated".format(numUpdatedFunctions, numUnkFunctions))

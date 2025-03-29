@@ -243,6 +243,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x298DDC3D</NID>
@@ -1008,6 +1009,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8CADA96B</NID>

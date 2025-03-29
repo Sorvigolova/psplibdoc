@@ -357,6 +357,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6074D8F1</NID>
@@ -939,6 +940,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD144DA6</NID>
@@ -1055,6 +1057,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x015A8A64</NID>
@@ -1976,6 +1979,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6074D8F1</NID>
@@ -2558,6 +2562,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD144DA6</NID>
@@ -2674,6 +2679,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x015A8A64</NID>

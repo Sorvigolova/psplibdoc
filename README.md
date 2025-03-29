@@ -74,6 +74,10 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
    - match-nids.py input.xml module_ver1.prx module_ver2.prx module_ver3.prx ...
    - Note that this will override previously already defined names
 
+ - Check if the "SOURCE" field of a NID is correct
+   - ./update_source.py
+   - Authorized values are "matching" (NID matches the name), "previous version" (name taken from a previous version), "previous version (automated)" (same but with automated function matching) and "unknown"
+
 ## General Notes
  - psp_libdoc currently does not load or save variables (Updating a PSPLibDoc however preserves variables)
  - Updating a PSPLibDoc is based on NID only, a loaded entry with the same NID will overwrite the previous one
