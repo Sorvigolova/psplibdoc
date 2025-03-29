@@ -1,6 +1,6 @@
 # PSPLibDoc
 An attempt to document symbols of PSP modules across all firmwares.\
-Page with the current NID status for each library can be found [here](https://spenon-dev.github.io/PSPLibDoc/).
+Page with the current NID status for each library can be found [here](https://pspdev.github.io/psplibdoc/).
 <br>
  
 ## Usage
