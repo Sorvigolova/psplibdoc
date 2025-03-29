@@ -15,6 +15,6 @@ done
 for fw in ${FW_VERSIONS[@]}; do
     COMBINED_LIBDOC_FILE="PSPLibDoc-$fw.xml"
     echo "Saving combined PSP-Libdoc file ${COMBINED_LIBDOC_FILE}"
-    ./psp_libdoc.py -l ${PRX_FILES[@]} -v $fw -c "./PSPLibDoc/ByVersion/${COMBINED_LIBDOC_FILE}"
+    ./psp_libdoc.py -l ${PRX_FILES[@]} -v $fw -c "./PSPLibDoc-computed/ByVersion/${COMBINED_LIBDOC_FILE}"
 done
 

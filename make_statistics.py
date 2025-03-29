@@ -100,6 +100,7 @@ def html_library(module, lib, stats_byver, versions):
         # Add a star if the NIDs of that library were (re-)randomized in that firmware version
         is_obf = stats_byver[ver][1]
         if is_obf:
+            print("OBF", module, versions[versions.index(ver) - 1], ver)
             obf_str = '<div style="position: absolute; width: 100%; height: 100%; text-align: center;">*</div>'
         else:
             obf_str = ''

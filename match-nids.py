@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# When a NID randomization has been detected, try to match to the closest function in the previous firmware
+# Usage example: ./match-nids.py PSPLibDoc/kd/ata.xml 620.PBP/F0/kd/ata.prx 630.PBP/F0/kd/ata.prx
+
 from collections import defaultdict
 import Levenshtein
 import psp_libdoc
@@ -7,9 +10,11 @@ import re
 import subprocess
 import sys
 
+# Run prxtool on a .prx file
 def run_prxtool(binary_path):
     return subprocess.check_output(["prxtool", "-w", binary_path], stderr=subprocess.DEVNULL).decode('ascii')
 
+# Get the raw disassembly (without addresses) of the functions of a .prx file
 def get_raw_functions(binary_path):
     data = run_prxtool(binary_path)
     funs = defaultdict(str)
@@ -17,7 +22,6 @@ def get_raw_functions(binary_path):
     names = []
     for line in data.split('\n'):
         if 'Subroutine' in line:
-            # ; Subroutine sceUsb_C21645A4 - Address 0x00002F40 - Aliases: sceUsb_driver_C21645A4, sceUsbBus_driver_C21645A4
             m = re.match(r"; Subroutine ([^ ]*) .*", line)
             names = [m.groups()[0]]
             alias_pos = line.find("Aliases: ")
@@ -33,7 +37,9 @@ def get_raw_functions(binary_path):
             break
     return funs
 
+# Match the functions of two module (versions) by repeatedly finding the closest pairs
 def match_module_pair(path1, path2):
+    # Find the functions of both modules, ignoring unexported functions
     funs1 = {k: v for k, v in get_raw_functions(path1).items() if not (k.startswith('sub_') or k.startswith('loc_') or k.startswith('module_'))}
     funs2 = {k: v for k, v in get_raw_functions(path2).items() if not (k.startswith('sub_') or k.startswith('loc_') or k.startswith('module_'))}
     distances = defaultdict(dict)
@@ -55,6 +61,7 @@ def match_module_pair(path1, path2):
             lib1 = f1[:-8]
             for (f2, c2) in funs2.items():
                 lib2 = f2[:-8]
+                # Only match functions belonging to the same library
                 if lib1 != lib2:
                     continue
                 cur_dist = distances[f1][f2]
@@ -67,13 +74,16 @@ def match_module_pair(path1, path2):
         del funs1[closest_pair[0]]
         del funs2[closest_pair[1]]
         result[closest_pair[0]] = closest_pair[1]
+    # Return a dictionary of (name of function in path1) -> (name of function in path2)
     return result
 
+# Match pairs of NIDs for a sequence of versions of modules
 def match_modules(paths):
     results = []
     for (path1, path2) in zip(paths, paths[1:]):
         print("check", path1, path2)
         results.append(match_module_pair(path1, path2))
+        print(results[-1])
 
     checked = set()
     nid_matches = {}
@@ -89,9 +99,10 @@ def match_modules(paths):
                     k = results[i][k]
                     checked.add(k)
                     nid_matches[k] = firstk
-                print()
+                print(k)
     return nid_matches
 
+# Return the "real" name associated to an unobfuscated name (LibraryName_12345678), if it exists in the psplibdoc
 def check_entry(entries, funname):
     lib = '_'.join(funname.split('_')[:-1])
     nid = funname.split('_')[-1]
@@ -103,25 +114,25 @@ def check_entry(entries, funname):
                 return None
     assert(False)
 
+# Include automated deductions in a given libdoc file
 def fix_psplibdoc(libdoc, modules):
+    # nid_matches contains a (obfuscated NID) -> (unobfuscated NID) mapping
     nid_matches = match_modules(modules)
 
     entries = psp_libdoc.loadPSPLibdoc(libdoc)
-    entries2 = []
+    out_entries = []
     for e in entries:
         funname = e.libraryName + '_' + e.nid
         if e.name.endswith(e.nid) and funname in nid_matches:
+            # Check if the unobfuscated NID does have an associated name
             prev_name = check_entry(entries, nid_matches[funname])
             if prev_name is not None:
                 print(funname, '->', prev_name)
                 e = e._replace(name = prev_name, source = "previous version (automated)")
-        entries2.append(e)
+        out_entries.append(e)
 
-    psp_libdoc.updatePSPLibdoc(entries2, libdoc)
+    psp_libdoc.updatePSPLibdoc(out_entries, libdoc)
 
 if __name__ == '__main__':
-    #get_raw_functions(sys.argv[1])
-    #match_module_pair(sys.argv[1], sys.argv[2])
-    #match_modules(sys.argv[1:])
     fix_psplibdoc(sys.argv[1], sys.argv[2:])
 

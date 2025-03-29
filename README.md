@@ -23,7 +23,8 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
 
  - Save a combined PSPLibDoc XML file from all loaded sources
     - psp_libdoc.py *sources* -c psp_libdoc.xml
-    - save_combined.sh will create a combined PSPLibDoc file for all firmwares
+    - save_combined.sh will create a combined PSPLibDoc file for all firmwares and modules
+    - save_per_fw_version.sh will create a combined PSPLibDoc file for all firmware versions, each containing all modules
 
  - Save PRX modules as individual PSPLibDoc XML files from all loaded sources
     - psp_libdoc.py *sources* -s outputFolder
@@ -36,7 +37,6 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
     - Put all export files into an input folder and name them after the prx it should update
     - Example: ata.exp, sysmem.exp in inputFolder will update ata.xml and sysmem.xml across all firmwares
     - ./update_from_psp_exports.sh inputFolder
-
 
  - Export all unknown NIDs from all loaded sources
     - psp_libdoc.py *sources* -o unknown_nids.txt
@@ -63,6 +63,17 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
     - Example: psp_print_libdoc.py -d PSPLibDoc/1.50/ -m LoadCoreForKernel
 <br>
 
+### Misc tools
+ - Check NIDs which have a name attributed to them in an xml but not another one
+   - check_missing_known_nids.py
+
+ - Generate a page containing the statistics of known and unknown NIDs
+   - make_statistics.py
+
+ - Try matching NIDs before and after obfuscation using prxtool to find the closest functions
+   - match-nids.py input.xml module_ver1.prx module_ver2.prx module_ver3.prx ...
+   - Note that this will override previously already defined names
+
 ## General Notes
  - psp_libdoc currently does not load or save variables (Updating a PSPLibDoc however preserves variables)
  - Updating a PSPLibDoc is based on NID only, a loaded entry with the same NID will overwrite the previous one
@@ -83,6 +94,6 @@ psp_libdoc.py and psp_print_libdoc.py require python3 with lxml module.
 A big thanks goes to
  - All original PSPLibDoc contributers
  - All PPSSPP contributers for additional user library symbols
- - All UOFW contributers for updated 6.60 and 6.61 symbols
- - artart78 for additional scripts and Github CI for NID status HTML page.
- - artart78, Draan, efonte, GrapheneCt, sajattack, SilverSpring, zecoxao for additional symbol sources and NIDs
+ - All uOFW contributors for updated 6.60 and 6.61 symbols
+ - artart78, Draan, efonte, GrapheneCt, sajattack, SilverSpring, zecoxao, Spenon-Dev for additional symbol sources and NIDs
+ - Spenon-Dev for the original repo [here](https://github.com/Spenon-dev/PSPLibDoc)

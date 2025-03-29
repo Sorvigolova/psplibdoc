@@ -13,5 +13,5 @@ done
 
 COMBINED_LIBDOC_FILE="PSPLibDoc.xml"
 echo "Saving combined PSP-Libdoc file ${COMBINED_LIBDOC_FILE}"
-./psp_libdoc.py -l ${PRX_FILES[@]} -c "./PSPLibDoc/${COMBINED_LIBDOC_FILE}"
+./psp_libdoc.py -l ${PRX_FILES[@]} -c "./PSPLibDoc-computed/${COMBINED_LIBDOC_FILE}"
 
