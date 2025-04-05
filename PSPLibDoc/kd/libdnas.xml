@@ -121,6 +121,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x45C1AAF5</NID>
@@ -233,6 +234,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6929100C</NID>
@@ -343,6 +345,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9FF48DD3</NID>
@@ -455,6 +458,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA646E771</NID>
@@ -567,6 +571,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBE0998D7</NID>
@@ -679,6 +684,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCA8B8909</NID>
@@ -791,6 +797,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF3787AD8</NID>
@@ -901,6 +908,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2D424791</NID>

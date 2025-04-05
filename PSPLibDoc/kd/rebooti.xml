@@ -30,6 +30,7 @@
               <VERSIONS>
                 <VERSION>1.00</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -39,6 +40,7 @@
               <VERSIONS>
                 <VERSION>1.00</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

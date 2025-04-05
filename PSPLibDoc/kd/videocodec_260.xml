@@ -1352,6 +1352,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>

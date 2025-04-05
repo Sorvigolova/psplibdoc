@@ -16,6 +16,7 @@
               <VERSIONS>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -25,6 +26,7 @@
               <VERSIONS>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -32,6 +34,7 @@
               <VERSIONS>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

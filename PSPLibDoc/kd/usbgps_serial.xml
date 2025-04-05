@@ -156,6 +156,7 @@
               <VERSIONS>
                 <VERSION>2.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
@@ -163,6 +164,7 @@
               <VERSIONS>
                 <VERSION>2.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -172,6 +174,7 @@
               <VERSIONS>
                 <VERSION>2.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

@@ -236,6 +236,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAA2ED267</NID>
@@ -283,6 +284,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xE063D402</NID>
@@ -330,6 +332,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>

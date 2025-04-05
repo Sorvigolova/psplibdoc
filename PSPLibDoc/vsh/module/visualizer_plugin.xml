@@ -56,6 +56,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
@@ -103,6 +104,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -152,6 +154,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -199,6 +202,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x0F7C276C</NID>
@@ -246,6 +250,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

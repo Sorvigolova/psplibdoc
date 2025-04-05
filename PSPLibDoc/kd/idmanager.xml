@@ -101,6 +101,7 @@
                 <VERSION>5.55</VERSION>
                 <VERSION>5.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -144,6 +145,7 @@
                 <VERSION>5.55</VERSION>
                 <VERSION>5.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -185,6 +187,7 @@
                 <VERSION>5.55</VERSION>
                 <VERSION>5.70</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

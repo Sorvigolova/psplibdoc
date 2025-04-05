@@ -4256,6 +4256,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
@@ -4281,6 +4282,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -4308,6 +4310,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x0F7C276C</NID>
@@ -4333,6 +4336,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -4351,6 +4355,7 @@
                 <VERSION>3.52</VERSION>
                 <VERSION>3.60</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

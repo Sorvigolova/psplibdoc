@@ -1357,6 +1357,7 @@
                 <VERSION>5.51</VERSION>
                 <VERSION>5.55</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
@@ -1373,6 +1374,7 @@
                 <VERSION>5.51</VERSION>
                 <VERSION>5.55</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -1391,6 +1393,7 @@
                 <VERSION>5.51</VERSION>
                 <VERSION>5.55</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -1407,6 +1410,7 @@
                 <VERSION>5.51</VERSION>
                 <VERSION>5.55</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>

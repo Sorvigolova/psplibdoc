@@ -521,6 +521,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3A20A200</NID>
@@ -574,6 +575,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3DD7EE1A</NID>
@@ -680,6 +682,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5B37EB1D</NID>
@@ -733,6 +736,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x70A703F8</NID>
@@ -786,6 +790,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8ACA11D5</NID>
@@ -839,6 +844,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9D3F790C</NID>
@@ -892,6 +898,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>

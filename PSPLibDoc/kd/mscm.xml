@@ -1880,6 +1880,7 @@
                 <VERSION>3.90</VERSION>
                 <VERSION>3.93</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
@@ -1919,6 +1920,7 @@
                 <VERSION>3.90</VERSION>
                 <VERSION>3.93</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2F064FA6</NID>
@@ -1958,6 +1960,7 @@
                 <VERSION>3.90</VERSION>
                 <VERSION>3.93</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
           </FUNCTIONS>
           <VARIABLES>
@@ -1999,6 +2002,7 @@
                 <VERSION>3.90</VERSION>
                 <VERSION>3.93</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
             <VARIABLE>
               <NID>0x11B97506</NID>
@@ -2024,6 +2028,7 @@
                 <VERSION>3.90</VERSION>
                 <VERSION>3.93</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>
