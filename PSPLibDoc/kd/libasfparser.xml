@@ -666,6 +666,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6B3AE857</NID>
@@ -886,6 +887,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8B08301F</NID>
@@ -1279,6 +1281,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x002052FF</NID>

@@ -5514,6 +5514,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBDAA1375</NID>
@@ -6174,6 +6175,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDB6F2A9B</NID>
@@ -7111,6 +7113,7 @@
                 <VERSION>6.60</VERSION>
                 <VERSION>6.61</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x01FE88CA</NID>

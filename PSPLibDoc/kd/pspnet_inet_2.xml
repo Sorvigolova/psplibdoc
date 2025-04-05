@@ -885,6 +885,7 @@
                 <VERSION>vita-1.69.1</VERSION>
                 <VERSION>vita-1.69.2</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEB7A7E4F</NID>

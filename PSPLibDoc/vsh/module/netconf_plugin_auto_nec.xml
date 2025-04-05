@@ -33,6 +33,7 @@
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x70A22EF2</NID>
@@ -81,6 +82,7 @@
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD030086D</NID>
@@ -105,6 +107,7 @@
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF3AF9DD1</NID>
@@ -129,6 +132,7 @@
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1B26D858</NID>

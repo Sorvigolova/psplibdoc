@@ -77149,6 +77149,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0DCE1309</NID>
@@ -77363,6 +77364,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1171FA01</NID>
@@ -77470,6 +77472,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x16240448</NID>
@@ -78220,6 +78223,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x216D1BF1</NID>
@@ -78435,6 +78439,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x30B217A5</NID>
@@ -81433,6 +81438,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAE662080</NID>
@@ -83466,6 +83472,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF9401A23</NID>

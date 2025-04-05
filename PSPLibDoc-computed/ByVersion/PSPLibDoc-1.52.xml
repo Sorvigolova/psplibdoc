@@ -228,6 +228,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -442,6 +456,28 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -496,7 +532,42 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>auth_plugin.prx</PRX>
+      <PRXNAME>auth_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>blkdev.prx</PRX>
@@ -548,7 +619,34 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>change_flash_attr.prx</PRX>
+      <PRXNAME>Change_flash_attr</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>chkreg.prx</PRX>
@@ -565,6 +663,24 @@
             <FUNCTION>
               <NID>0x59F8491D</NID>
               <NAME>sceChkregGetPsCode</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -606,11 +722,19 @@
         </LIBRARY>
         <LIBRARY>
           <NAME>sceChnnlsv_driver</NAME>
-          <FLAGS>0x00010000</FLAGS>
+          <FLAGS>0x00010011</FLAGS>
           <FUNCTIONS>
             <FUNCTION>
               <NID>0x21BE78B4</NID>
               <NAME>sceSdCleanList</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x21BE78B4</NID>
+              <NAME>sceSdCleanList</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x850A7FA1</NID>
+              <NAME>sceSdSetMember</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x850A7FA1</NID>
@@ -621,6 +745,14 @@
               <NAME>sceSdCreateList</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0xABFDFC8B</NID>
+              <NAME>sceSdCreateList</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xC4C494F8</NID>
+              <NAME>sceSdGetLastIndex</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xC4C494F8</NID>
               <NAME>sceSdGetLastIndex</NAME>
             </FUNCTION>
@@ -629,8 +761,34 @@
               <NAME>sceSdSetIndex</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0xE7833020</NID>
+              <NAME>sceSdSetIndex</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xF21A1FCA</NID>
               <NAME>sceSdRemoveValue</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF21A1FCA</NID>
+              <NAME>sceSdRemoveValue</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -683,6 +841,24 @@
             <FUNCTION>
               <NID>0xDBE5F283</NID>
               <NAME>sceClockgenLeptonClkDisable</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -758,6 +934,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -806,7 +996,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x566AA22F</NID>
-              <NAME>sceVshCommonGui_566AA22F</NAME>
+              <NAME>_ZN3vsh11ContentInfo10SetTextureERKN3paf12SurfaceRCPtrINS1_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x57F57F40</NID>
@@ -818,7 +1008,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5D36BCE6</NID>
-              <NAME>sceVshCommonGui_5D36BCE6</NAME>
+              <NAME>_ZN3vsh11ContentInfo4InfoEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x607D5C82</NID>
@@ -826,7 +1016,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x61A1FA3A</NID>
-              <NAME>sceVshCommonGui_61A1FA3A</NAME>
+              <NAME>_ZN3vsh11ContentInfo4MenuEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x68778E5A</NID>
@@ -838,7 +1028,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x72C75A14</NID>
-              <NAME>sceVshCommonGui_72C75A14</NAME>
+              <NAME>_ZN3vsh11ContentInfo8SetMusicERKN3paf10MiconRCPtrINS1_13MusicResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x72E652AA</NID>
@@ -858,7 +1048,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x891E0954</NID>
-              <NAME>sceVshCommonGui_891E0954</NAME>
+              <NAME>_ZN3vsh10OptionMenu8SetAlphaEf</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8EB783F5</NID>
@@ -866,7 +1056,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9C50A821</NID>
-              <NAME>sceVshCommonGui_9C50A821</NAME>
+              <NAME>_ZN3vsh11ContentInfo6DeleteEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9F196654</NID>
@@ -874,7 +1064,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9FAA1BC2</NID>
-              <NAME>sceVshCommonGui_9FAA1BC2</NAME>
+              <NAME>_ZN3vsh11ContentInfo12DeleteMotionEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA06734FF</NID>
@@ -906,7 +1096,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC4D809CB</NID>
-              <NAME>sceVshCommonGui_C4D809CB</NAME>
+              <NAME>_ZN3vsh11ContentInfo8SetMovieERKN3paf10MiconRCPtrINS1_13MovieResourceEEEb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC5B53362</NID>
@@ -938,7 +1128,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA1DE461</NID>
-              <NAME>sceVshCommonGui_FA1DE461</NAME>
+              <NAME>_ZN3vsh11ContentInfo13SetOnplayFuncEPFvPvES1_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA9B7ABD</NID>
@@ -950,7 +1140,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x16DA723A</NID>
-              <NAME>sceVshCommonGui_16DA723A</NAME>
+              <NAME>_ZN3vsh11ContentInfo4HalfEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x25D6E91D</NID>
@@ -965,8 +1155,16 @@
               <NAME>_ZN3vsh13Infobar_CloseEb</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x4AF8E417</NID>
+              <NAME>_ZN3paf8PhXmItem12AnimIconStopEv</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x4AF8E417</NID>
+              <NAME>_ZN3paf8PhXmItem12AnimIconStopEv</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x5074C948</NID>
-              <NAME>sceVshCommonGui_5074C948</NAME>
+              <NAME>_ZN3vsh11ContentInfo7SetTypeEiPv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x88F5E3A8</NID>
@@ -974,19 +1172,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8A029A78</NID>
-              <NAME>sceVshCommonGui_8A029A78</NAME>
+              <NAME>_ZN3vsh11ContentInfo11SetAnimIconERKN3paf12SurfaceRCPtrINS1_7SurfaceEEES6_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA939DDF9</NID>
-              <NAME>sceVshCommonGui_A939DDF9</NAME>
+              <NAME>_ZN3vsh11ContentInfo12PlayAnimIconEb</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF4FD56D2</NID>
-              <NAME>sceVshCommonGui_F4FD56D2</NAME>
-            </FUNCTION>
-            <FUNCTION>
-              <NID>0x4AF8E417</NID>
-              <NAME>_ZN3paf8PhXmItem12AnimIconStopEv</NAME>
+              <NAME>_ZN3vsh11ContentInfo4FullEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x614630E6</NID>
@@ -994,7 +1188,29 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDE027583</NID>
-              <NAME>sceVshCommonGui_DE027583</NAME>
+              <NAME>_ZN3vsh11ContentInfoC1EPN3paf8PhWidgetEPviPNS1_8PhXmListE</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -1157,6 +1373,10 @@
               <NAME>vshRegSysconfSetTimezoneOffset</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0xDBD6B255</NID>
+              <NAME>sceVshCommonUtil_DBD6B255</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xDEB009C6</NID>
               <NAME>vshRegSysconfSetTimezoneArea</NAME>
             </FUNCTION>
@@ -1178,7 +1398,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0713D516</NID>
-              <NAME>sceVshCommonUtil_0713D516</NAME>
+              <NAME>_ZN3vsh10RebootLock4ExitEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0AF412FC</NID>
@@ -1186,19 +1406,19 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x12F5429A</NID>
-              <NAME>sceVshCommonUtil_12F5429A</NAME>
+              <NAME>_ZN3vsh10RebootLock4InitEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x249059B5</NID>
-              <NAME>sceVshCommonUtil_249059B5</NAME>
+              <NAME>RebootLock_Lock</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3FAF35EC</NID>
-              <NAME>sceVshCommonUtil_3FAF35EC</NAME>
+              <NAME>_ZN3vsh10RebootLock6RebootEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5A0B7762</NID>
-              <NAME>sceVshCommonUtil_5A0B7762</NAME>
+              <NAME>_ZN3vsh9PowerLock10SetHandlerEPFiiES2_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x686AAA1A</NID>
@@ -1206,7 +1426,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x7683BE4D</NID>
-              <NAME>sceVshCommonUtil_7683BE4D</NAME>
+              <NAME>RebootLock_Unlock</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9DF53F2F</NID>
@@ -1231,6 +1451,28 @@
             <FUNCTION>
               <NID>0x81B52E61</NID>
               <NAME>sceVshCommonUtil_81B52E61</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -1416,7 +1658,46 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>dialogmain.prx</PRX>
+      <PRXNAME>sceDialogmain_Module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>display.prx</PRX>
@@ -1614,6 +1895,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -1703,6 +2002,24 @@
             <FUNCTION>
               <NID>0xF64BAB99</NID>
               <NAME>sceKernelDmaOpAssign</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -1944,6 +2261,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -2021,6 +2356,20 @@
             <FUNCTION>
               <NID>0xF23B7983</NID>
               <NAME>sceDdr_driver_F23B7983</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -2192,6 +2541,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -2227,12 +2594,30 @@
               <NAME>sceKernelRegisterPriorityExceptionHandler</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x8B65A2F3</NID>
+              <NAME>ExceptionManagerForKernel_8B65A2F3</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xB15357C9</NID>
               <NAME>sceKernelReleaseNmiHandler</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDF83875E</NID>
               <NAME>sceKernelGetActiveDefaultExceptionHandler</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -2252,7 +2637,38 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>game_plugin.prx</PRX>
+      <PRXNAME>game_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>ge.prx</PRX>
@@ -2430,6 +2846,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -2522,6 +2956,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -2540,6 +2992,40 @@
               <NID>0xF50AAE41</NID>
               <NAME>sce_paf_private_getheaparea1</NAME>
             </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+      </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>heaparea2.prx</PRX>
+      <PRXNAME>scePafHeaparea_Module</PRXNAME>
+      <LIBRARIES>
+        <LIBRARY>
+          <NAME>scePafHeaparea</NAME>
+          <FLAGS>0x00010000</FLAGS>
+          <FUNCTIONS>
             <FUNCTION>
               <NID>0xACCE25B2</NID>
               <NAME>sce_paf_private_getheaparea2</NAME>
@@ -2550,12 +3036,29 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
-    </PRXFILE>
-    <PRXFILE>
-      <PRX>heaparea2.prx</PRX>
-      <PRXNAME>scePafHeaparea_Module</PRXNAME>
-      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>hpremote.prx</PRX>
@@ -2685,6 +3188,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -2738,6 +3259,24 @@
             <FUNCTION>
               <NID>0x0397408B</NID>
               <NAME>sceI2cSetPollingMode</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -2830,6 +3369,24 @@
             <FUNCTION>
               <NID>0xFEFA40C2</NID>
               <NAME>sceIdStorageIsFormatted</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -3213,6 +3770,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -3359,7 +3934,42 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>impose_plugin.prx</PRX>
+      <PRXNAME>impose_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>init.prx</PRX>
@@ -3400,6 +4010,24 @@
             <FUNCTION>
               <NID>0x7233B5BC</NID>
               <NAME>sceKernelApplicationType</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -3532,6 +4160,10 @@
               <NAME>sceKernelEnableIntr</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x4EBF8E13</NID>
+              <NAME>InterruptManagerForKernel_4EBF8E13</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x53991063</NID>
               <NAME>InterruptManagerForKernel_53991063</NAME>
             </FUNCTION>
@@ -3630,6 +4262,20 @@
             <FUNCTION>
               <NID>0x36B1EF81</NID>
               <NAME>sceKernelQueryIntrHandlerInfo</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -3975,6 +4621,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -3988,6 +4652,24 @@
             <FUNCTION>
               <NID>0x19F9734D</NID>
               <NAME>sceIsofsGetFileSystem</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4067,6 +4749,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4099,6 +4799,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4119,6 +4837,36 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xADF12745</NID>
+              <NAME>module_reboot_phase</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4132,6 +4880,20 @@
             <FUNCTION>
               <NID>0xB7A424A4</NID>
               <NAME>sceLflashFatfmtStartFatfmt</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4244,6 +5006,24 @@
             <FUNCTION>
               <NID>0xFAA4F89B</NID>
               <NAME>sceAtracGetLoopStatus</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4447,6 +5227,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4464,6 +5262,24 @@
             <FUNCTION>
               <NID>0xAD7BFDEF</NID>
               <NAME>sceParseHttpResponseHeader</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4492,6 +5308,24 @@
             <FUNCTION>
               <NID>0x7EE318AF</NID>
               <NAME>sceUriBuild</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4544,6 +5378,24 @@
             <FUNCTION>
               <NID>0xFD675E8D</NID>
               <NAME>sceUpdateDownloadConnectServer</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -4679,6 +5531,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4769,6 +5635,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -4782,6 +5662,20 @@
             <FUNCTION>
               <NID>0x99CBCF35</NID>
               <NAME>sceMe4VSH_driver_99CBCF35</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -5019,6 +5913,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -5033,9 +5945,19 @@
               <NID>0x3BCB751E</NID>
               <NAME>me_init</NAME>
             </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
             <FUNCTION>
-              <NID>0x3BCB751E</NID>
-              <NAME>me_init</NAME>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -5044,7 +5966,32 @@
     <PRXFILE>
       <PRX>mebooter_umdvideo.prx</PRX>
       <PRXNAME>sceMeBooter</PRXNAME>
-      <LIBRARIES/>
+      <LIBRARIES>
+        <LIBRARY>
+          <NAME>sceMeBooter_driver</NAME>
+          <FLAGS>0x00010000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x3BCB751E</NID>
+              <NAME>me_init</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+      </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
       <PRX>mediaman.prx</PRX>
@@ -5198,7 +6145,34 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>mediasync.prx</PRX>
+      <PRXNAME>sceMediaSync</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>memab.prx</PRX>
@@ -5266,6 +6240,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -5305,6 +6297,24 @@
             <FUNCTION>
               <NID>0x8EEB7BF2</NID>
               <NAME>sceUtilsBufferCopyByPolling</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -5477,6 +6487,20 @@
             <FUNCTION>
               <NID>0xB7CE9041</NID>
               <NAME>sceWmd_driver_B7CE9041</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -5760,6 +6784,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -5986,6 +7028,28 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xADF12745</NID>
+              <NAME>module_reboot_phase</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -6178,6 +7242,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -6272,6 +7354,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -6361,6 +7461,24 @@
             <FUNCTION>
               <NID>0xFE7BC654</NID>
               <NAME>sceMSAudioReadMACList</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -6560,7 +7678,46 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>msgdialog_plugin.prx</PRX>
+      <PRXNAME>sceVshMSDPlugin_Module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>msstor.prx</PRX>
@@ -6580,7 +7737,127 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>msvideo_plugin.prx</PRX>
+      <PRXNAME>msvideo_plugin_module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>music_plugin.prx</PRX>
+      <PRXNAME>music_plugin_module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>netconf_plugin.prx</PRX>
+      <PRXNAME>sceVshNetconf_Module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>netplay_client_plugin.prx</PRX>
+      <PRXNAME>sceVshGSPlugin_Module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>netplay_server_utility.prx</PRX>
+      <PRXNAME>sceVshGSUtility_Module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>opening_plugin.prx</PRX>
+      <PRXNAME>opening_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>openpsid.prx</PRX>
@@ -6606,7 +7883,38 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>osk_plugin.prx</PRX>
+      <PRXNAME>sceVshOSK_Module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>paf.prx</PRX>
@@ -6626,7 +7934,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x01C2FC36</NID>
-              <NAME>scePaf_01C2FC36</NAME>
+              <NAME>_Z21PSJS_InternalExecFuncRK11PSJSContextRK9PSJSValueRS2_iPS2_S6_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x04EF78CD</NID>
@@ -6634,7 +7942,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x05073826</NID>
-              <NAME>scePaf_05073826</NAME>
+              <NAME>_ZNK3paf7PhMicon11GetChannelsEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0598FFD6</NID>
@@ -6702,7 +8010,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0F3527DD</NID>
-              <NAME>scePaf_0F3527DD</NAME>
+              <NAME>_Z9PSJS_FreePv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0FB7D433</NID>
@@ -6710,7 +8018,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0FFA3ECE</NID>
-              <NAME>scePaf_0FFA3ECE</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetWidthEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x10B901E7</NID>
@@ -6718,7 +8026,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x10C1DB70</NID>
-              <NAME>scePaf_10C1DB70</NAME>
+              <NAME>_Z13PSJS_ExecFuncRK11PSJSContextRK9PSJSValueRS2_iPS2_S6_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x10F3BB61</NID>
@@ -6734,7 +8042,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x12C50A9D</NID>
-              <NAME>scePaf_12C50A9D</NAME>
+              <NAME>_ZN3paf5Image9SetExtentERKNS_11ImageExtentENS_12OpResizeTypeE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x132148FD</NID>
@@ -6766,7 +8074,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x17308FC9</NID>
-              <NAME>scePaf_17308FC9</NAME>
+              <NAME>_Z25PSJS_BuildValueImpl_ArrayRK11PSJSContextiP9PSJSValue</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1811AD32</NID>
@@ -6794,7 +8102,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x1A468B86</NID>
-              <NAME>scePaf_1A468B86</NAME>
+              <NAME>_ZNK8PSJSPage6IsOpenEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1AD33D73</NID>
@@ -6854,7 +8162,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x21DBFF5B</NID>
-              <NAME>scePaf_21DBFF5B</NAME>
+              <NAME>_ZN3paf7Surface4CopyEiRKNS_12SurfaceRCPtrIS0_EEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x222526B6</NID>
@@ -6862,11 +8170,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x224C33F0</NID>
-              <NAME>scePaf_224C33F0</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetRepeatEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x22B0D7D8</NID>
-              <NAME>scePaf_22B0D7D8</NAME>
+              <NAME>_ZN3paf7PhModel15SetTextureImageERKNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2313DDCA</NID>
@@ -6950,7 +8258,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x2AA842B0</NID>
-              <NAME>scePaf_2AA842B0</NAME>
+              <NAME>_ZN3paf4View20SetVirtualScreenSizeEPKcii</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2C5D3E63</NID>
@@ -7006,7 +8314,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x32A70C80</NID>
-              <NAME>scePaf_32A70C80</NAME>
+              <NAME>_ZNK3paf4View8GetModelEPKc</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x32B27ADD</NID>
@@ -7014,7 +8322,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x33096E46</NID>
-              <NAME>scePaf_33096E46</NAME>
+              <NAME>_ZN3paf8PhWidget11SetIntervalEifPFvPS0_PNS_7PhTimerEiPvES4_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3342C5F5</NID>
@@ -7129,6 +8437,10 @@
               <NAME>Heap_Alloc</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x3E7114AF</NID>
+              <NAME>scePaf_3E7114AF</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x3F52824F</NID>
               <NAME>_ZN3paf8PhWidget8SetStyleEib</NAME>
             </FUNCTION>
@@ -7139,6 +8451,10 @@
             <FUNCTION>
               <NID>0x3FBD9639</NID>
               <NAME>sce_paf_private_memcmp</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x3FC154C6</NID>
+              <NAME>scePaf_3FC154C6</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x409E25A3</NID>
@@ -7154,7 +8470,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x4129A915</NID>
-              <NAME>scePaf_4129A915</NAME>
+              <NAME>_ZN3paf7PhMicon6EnableEib</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x41A7BDD2</NID>
@@ -7290,7 +8606,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x4EA868E6</NID>
-              <NAME>scePaf_4EA868E6</NAME>
+              <NAME>_ZNK3paf8PhWidget10GetTextureERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4FC2470C</NID>
@@ -7401,6 +8717,10 @@
               <NAME>_ZN3paf7PhXmBar16SetTopLabelAlphaEfff</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x56855329</NID>
+              <NAME>scePaf_56855329</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x56F4D69F</NID>
               <NAME>_ZN10PSJSObjectC2ERK11PSJSContext</NAME>
             </FUNCTION>
@@ -7438,7 +8758,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5C4BF618</NID>
-              <NAME>scePaf_5C4BF618</NAME>
+              <NAME>_ZN3paf7Surface10AttachCLUTERKNS_12SurfaceRCPtrINS_11SurfaceCLUTEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5C5F727C</NID>
@@ -7451,6 +8771,10 @@
             <FUNCTION>
               <NID>0x5CE11C03</NID>
               <NAME>_ZN3paf7PhMicon11SetChannelsEi</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x5CE4C6C9</NID>
+              <NAME>scePaf_5CE4C6C9</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5D242D11</NID>
@@ -7482,7 +8806,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5EFC5387</NID>
-              <NAME>scePaf_5EFC5387</NAME>
+              <NAME>_ZN3paf10MessageBox30SetQueryProgressBarInfoHandlerEPFvPNS0_15ProgressBarInfoEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5FAC9869</NID>
@@ -7494,7 +8818,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x607713A6</NID>
-              <NAME>scePaf_607713A6</NAME>
+              <NAME>_ZN3paf10MessageBox25SetQueryButtonInfoHandlerEPFbNS0_10ButtonTypeEPNS0_10ButtonInfoEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x60CBB63F</NID>
@@ -7626,7 +8950,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CE39EF8</NID>
-              <NAME>scePaf_6CE39EF8</NAME>
+              <NAME>_ZNK3paf4View13GetBottomPageEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CF44237</NID>
@@ -7785,6 +9109,10 @@
               <NAME>_ZN3paf10PhMenuList10WidgetTypeEv</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x7C94404D</NID>
+              <NAME>scePaf_7C94404D</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x7D83FB20</NID>
               <NAME>_ZN9PSJSValuenaEj</NAME>
             </FUNCTION>
@@ -7822,7 +9150,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8117E6C8</NID>
-              <NAME>scePaf_8117E6C8</NAME>
+              <NAME>_ZN3paf4View19PsjsCompleteSuspendEPvS1_S1_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8159EB28</NID>
@@ -7866,7 +9194,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x84913A3A</NID>
-              <NAME>scePaf_84913A3A</NAME>
+              <NAME>_ZNK3paf7PhMicon7GetTimeEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x849ED670</NID>
@@ -7886,7 +9214,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x86A5AE7D</NID>
-              <NAME>scePaf_86A5AE7D</NAME>
+              <NAME>_ZNK3paf7PhMicon10GetBGColorEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x86B41BA3</NID>
@@ -7922,11 +9250,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x89582FD0</NID>
-              <NAME>scePaf_89582FD0</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetHeightEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8A51BA1E</NID>
-              <NAME>scePaf_8A51BA1E</NAME>
+              <NAME>_ZNK3paf7PhMicon9IsEnabledEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8A861692</NID>
@@ -7982,7 +9310,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8E757709</NID>
-              <NAME>scePaf_8E757709</NAME>
+              <NAME>_ZNK9PSJSValue8ToStringEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8F12B63A</NID>
@@ -8015,6 +9343,10 @@
             <FUNCTION>
               <NID>0x927854C5</NID>
               <NAME>_ZN3paf8PhWidget8ShowFadeEfbi</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x92A13795</NID>
+              <NAME>scePaf_92A13795</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x92A46B32</NID>
@@ -8054,7 +9386,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x95708BC0</NID>
-              <NAME>scePaf_95708BC0</NAME>
+              <NAME>_ZN3paf7PhMicon8SetMovieERKNS_10MiconRCPtrINS_13MovieResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x95948FB6</NID>
@@ -8070,7 +9402,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x962FA087</NID>
-              <NAME>scePaf_962FA087</NAME>
+              <NAME>_ZN3paf8PhAppear12ShadowRenderEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x96610AE6</NID>
@@ -8094,7 +9426,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x986FEBD1</NID>
-              <NAME>scePaf_986FEBD1</NAME>
+              <NAME>_ZN3paf4View15SetEventHandlerEPKNS_18EventFunctionEntryE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9870A25B</NID>
@@ -8146,7 +9478,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9D1633BC</NID>
-              <NAME>scePaf_9D1633BC</NAME>
+              <NAME>_ZNK3paf4View8ArgumentcvfEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9D496842</NID>
@@ -8194,7 +9526,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA3761F27</NID>
-              <NAME>scePaf_A3761F27</NAME>
+              <NAME>_ZN3paf7PhMicon7SetLoopEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA4B48F00</NID>
@@ -8250,7 +9582,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAAA8D3DA</NID>
-              <NAME>scePaf_AAA8D3DA</NAME>
+              <NAME>_ZN3paf9PhHandler11SetDeleteCBEPFvPNS_8PhWidgetEPNS_7PhEventEPvES5_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAAD0EE78</NID>
@@ -8278,7 +9610,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAD1721B8</NID>
-              <NAME>scePaf_AD1721B8</NAME>
+              <NAME>_ZN8PSJSExec16FinalizeExecSyncEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAD43F865</NID>
@@ -8354,7 +9686,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xB52E43FB</NID>
-              <NAME>scePaf_B52E43FB</NAME>
+              <NAME>_Z33PSJS_RecycleValue_TemporaryObjectRK11PSJSContextR9PSJSValue</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB61E88F2</NID>
@@ -8442,7 +9774,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBBDE1C17</NID>
-              <NAME>scePaf_BBDE1C17</NAME>
+              <NAME>_ZN3paf4View18PsjsCompleteResumeEPvS1_S1_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD49CAEF</NID>
@@ -8478,7 +9810,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC01BF169</NID>
-              <NAME>scePaf_C01BF169</NAME>
+              <NAME>_ZN8PSJSExec10RegistExecEPFvPvS0_S0_bES0_S0_S0_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC1FAF826</NID>
@@ -8514,7 +9846,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC85155C9</NID>
-              <NAME>scePaf_C85155C9</NAME>
+              <NAME>_ZN3paf7PhMicon8SetMusicERKNS_10MiconRCPtrINS_13MusicResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC8E7B03F</NID>
@@ -8534,7 +9866,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xCA8CDF32</NID>
-              <NAME>scePaf_CA8CDF32</NAME>
+              <NAME>_ZN3paf7PhModel17SetTexturePaletteERKNS_12SurfaceRCPtrINS_7SurfaceEEEif</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCAB439DF</NID>
@@ -8610,7 +9942,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xCFF2B69C</NID>
-              <NAME>scePaf_CFF2B69C</NAME>
+              <NAME>_ZN3paf8PhWidget10SetTextureERKNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD02C0D2E</NID>
@@ -8634,7 +9966,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD153385E</NID>
-              <NAME>scePaf_D153385E</NAME>
+              <NAME>_ZN3paf7PhMicon10SetBGColorERK4vec4</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD16E5935</NID>
@@ -8646,7 +9978,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD188831A</NID>
-              <NAME>scePaf_D188831A</NAME>
+              <NAME>_ZN8PSJSExec28RegistFinalExecWithClearSyncEPFvPvS0_S0_bES0_S0_S0_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD1EE972C</NID>
@@ -8666,7 +9998,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD2C94856</NID>
-              <NAME>scePaf_D2C94856</NAME>
+              <NAME>_ZN13PSJSValueImpl11NewFromPoolERK11PSJSContextP10PSJSObject</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD2E0D705</NID>
@@ -8714,7 +10046,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD5372E90</NID>
-              <NAME>scePaf_D5372E90</NAME>
+              <NAME>_ZN3paf4View20SetVirtualScreenSizeEPvii</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD587826C</NID>
@@ -8842,7 +10174,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDE75C2BA</NID>
-              <NAME>scePaf_DE75C2BA</NAME>
+              <NAME>_ZNK3paf7PhMicon7GetLoopEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDEDF238F</NID>
@@ -8850,7 +10182,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDEF9EBE7</NID>
-              <NAME>scePaf_DEF9EBE7</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetMovieERNS_10MiconRCPtrINS_13MovieResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDF887DED</NID>
@@ -8866,7 +10198,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDFC8650C</NID>
-              <NAME>scePaf_DFC8650C</NAME>
+              <NAME>_ZN3paf10MessageBox25SetMessageBoxSoundHandlerEPFvNS0_9SoundTypeEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDFD3E855</NID>
@@ -8950,7 +10282,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEBDC149C</NID>
-              <NAME>scePaf_EBDC149C</NAME>
+              <NAME>_ZN3paf11SurfaceCLUTC1E9ImageModePvi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xECE59E24</NID>
@@ -8974,15 +10306,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEE10AEF1</NID>
-              <NAME>scePaf_EE10AEF1</NAME>
+              <NAME>_ZNK3paf7PhModel17GetTexturePaletteERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEF346632</NID>
-              <NAME>scePaf_EF346632</NAME>
+              <NAME>_ZN13PSJSValueImpl11NewFromPoolERK11PSJSContextRK10psjsstring</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEF52945B</NID>
-              <NAME>scePaf_EF52945B</NAME>
+              <NAME>_ZN3paf8PhWidget10SetTimeoutEifPFvPS0_PNS_7PhTimerEiPvES4_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF0B4CAE7</NID>
@@ -9014,7 +10346,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF23F3226</NID>
-              <NAME>scePaf_F23F3226</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetMusicERNS_10MiconRCPtrINS_13MusicResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF247A0BD</NID>
@@ -9038,7 +10370,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF3967AF5</NID>
-              <NAME>scePaf_F3967AF5</NAME>
+              <NAME>_Z25PSJS_BuildValueImpl_ErrorRK11PSJSContext19PSJS_EXCEPTION_TYPEPKc</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF4404EAF</NID>
@@ -9046,7 +10378,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF47CA1C2</NID>
-              <NAME>scePaf_F47CA1C2</NAME>
+              <NAME>_ZN3paf9PhHandler11SetCallBackEiPFvPNS_8PhWidgetEPNS_7PhEventEPvES5_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF49F3C59</NID>
@@ -9067,6 +10399,10 @@
             <FUNCTION>
               <NID>0xF6F3E99E</NID>
               <NAME>_ZN3paf17PhAppearBtnShadowC1EPKNS_8PhWidgetE</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF7912F20</NID>
+              <NAME>scePaf_F7912F20</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF7FB133E</NID>
@@ -9098,7 +10434,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA78AF39</NID>
-              <NAME>scePaf_FA78AF39</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetVolumeEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA87D725</NID>
@@ -9126,7 +10462,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFCABD0E7</NID>
-              <NAME>scePaf_FCABD0E7</NAME>
+              <NAME>_ZNK3paf7PhModel15GetTextureImageERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFCB4E053</NID>
@@ -9186,7 +10522,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0E8A3B52</NID>
-              <NAME>scePaf_0E8A3B52</NAME>
+              <NAME>_ZNK3paf9PhSRender12SetupTextureERKNS_12SurfaceRCPtrINS_7SurfaceEEERK4vec4</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0F2615A4</NID>
@@ -9230,7 +10566,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6F33D1DF</NID>
-              <NAME>scePaf_6F33D1DF</NAME>
+              <NAME>_ZN3paf4View16StopAnimSequenceEPNS_8PhWidgetE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x70B92642</NID>
@@ -9254,7 +10590,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x7BBD70F0</NID>
-              <NAME>scePaf_7BBD70F0</NAME>
+              <NAME>_ZN8PSJSHeapC1EPvj</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x85112756</NID>
@@ -9262,15 +10598,19 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x910BCFE1</NID>
-              <NAME>scePaf_910BCFE1</NAME>
+              <NAME>_ZN8PSJSExec21RegistExecTopPriorityEPFvPvS0_S0_bES0_S0_S0_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9DED6118</NID>
               <NAME>_ZN8PSJSHeap14private_mallocEj</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0xA6F1DBDD</NID>
+              <NAME>scePaf_A6F1DBDD</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xB09203B0</NID>
-              <NAME>scePaf_B09203B0</NAME>
+              <NAME>_ZNK3paf4View9GetWidgetEPv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBA1F20EE</NID>
@@ -9325,12 +10665,20 @@
               <NAME>sce_paf_private_ferror</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x241D0B88</NID>
+              <NAME>scePaf_241D0B88</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x281B3AD6</NID>
+              <NAME>scePaf_281B3AD6</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x539F2583</NID>
               <NAME>_ZN3paf15CriticalSection5LeaveEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7116224C</NID>
-              <NAME>scePaf_7116224C</NAME>
+              <NAME>_ZN3paf11PhLabelText21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x80E521C5</NID>
@@ -9346,7 +10694,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9DD9CA07</NID>
-              <NAME>scePaf_9DD9CA07</NAME>
+              <NAME>_ZN3paf10PhInfoList21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB884B031</NID>
@@ -9382,8 +10730,42 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF639E5E1</NID>
-              <NAME>scePaf_F639E5E1</NAME>
+              <NAME>_ZN3paf6PhText21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
             </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+      </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>pafmini.prx</PRX>
+      <PRXNAME>scePaf_Module</PRXNAME>
+      <LIBRARIES>
+        <LIBRARY>
+          <NAME>scePaf</NAME>
+          <FLAGS>0x00010000</FLAGS>
+          <FUNCTIONS>
             <FUNCTION>
               <NID>0x00D1378F</NID>
               <NAME>sceCccUTF8toUTF16</NAME>
@@ -9394,7 +10776,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x01C2FC36</NID>
-              <NAME>scePaf_01C2FC36</NAME>
+              <NAME>_Z21PSJS_InternalExecFuncRK11PSJSContextRK9PSJSValueRS2_iPS2_S6_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x04EF78CD</NID>
@@ -9402,7 +10784,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x05073826</NID>
-              <NAME>scePaf_05073826</NAME>
+              <NAME>_ZNK3paf7PhMicon11GetChannelsEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0598FFD6</NID>
@@ -9470,7 +10852,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0F3527DD</NID>
-              <NAME>scePaf_0F3527DD</NAME>
+              <NAME>_Z9PSJS_FreePv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0FB7D433</NID>
@@ -9478,7 +10860,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0FFA3ECE</NID>
-              <NAME>scePaf_0FFA3ECE</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetWidthEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x10B901E7</NID>
@@ -9486,7 +10868,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x10C1DB70</NID>
-              <NAME>scePaf_10C1DB70</NAME>
+              <NAME>_Z13PSJS_ExecFuncRK11PSJSContextRK9PSJSValueRS2_iPS2_S6_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x10F3BB61</NID>
@@ -9502,7 +10884,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x12C50A9D</NID>
-              <NAME>scePaf_12C50A9D</NAME>
+              <NAME>_ZN3paf5Image9SetExtentERKNS_11ImageExtentENS_12OpResizeTypeE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x132148FD</NID>
@@ -9534,7 +10916,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x17308FC9</NID>
-              <NAME>scePaf_17308FC9</NAME>
+              <NAME>_Z25PSJS_BuildValueImpl_ArrayRK11PSJSContextiP9PSJSValue</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1811AD32</NID>
@@ -9562,7 +10944,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x1A468B86</NID>
-              <NAME>scePaf_1A468B86</NAME>
+              <NAME>_ZNK8PSJSPage6IsOpenEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x1AD33D73</NID>
@@ -9622,7 +11004,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x21DBFF5B</NID>
-              <NAME>scePaf_21DBFF5B</NAME>
+              <NAME>_ZN3paf7Surface4CopyEiRKNS_12SurfaceRCPtrIS0_EEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x222526B6</NID>
@@ -9630,11 +11012,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x224C33F0</NID>
-              <NAME>scePaf_224C33F0</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetRepeatEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x22B0D7D8</NID>
-              <NAME>scePaf_22B0D7D8</NAME>
+              <NAME>_ZN3paf7PhModel15SetTextureImageERKNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2313DDCA</NID>
@@ -9718,7 +11100,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x2AA842B0</NID>
-              <NAME>scePaf_2AA842B0</NAME>
+              <NAME>_ZN3paf4View20SetVirtualScreenSizeEPKcii</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x2C5D3E63</NID>
@@ -9774,7 +11156,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x32A70C80</NID>
-              <NAME>scePaf_32A70C80</NAME>
+              <NAME>_ZNK3paf4View8GetModelEPKc</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x32B27ADD</NID>
@@ -9782,7 +11164,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x33096E46</NID>
-              <NAME>scePaf_33096E46</NAME>
+              <NAME>_ZN3paf8PhWidget11SetIntervalEifPFvPS0_PNS_7PhTimerEiPvES4_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3342C5F5</NID>
@@ -9897,6 +11279,10 @@
               <NAME>Heap_Alloc</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x3E7114AF</NID>
+              <NAME>scePaf_3E7114AF</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x3F52824F</NID>
               <NAME>_ZN3paf8PhWidget8SetStyleEib</NAME>
             </FUNCTION>
@@ -9907,6 +11293,10 @@
             <FUNCTION>
               <NID>0x3FBD9639</NID>
               <NAME>sce_paf_private_memcmp</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x3FC154C6</NID>
+              <NAME>scePaf_3FC154C6</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x409E25A3</NID>
@@ -9922,7 +11312,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x4129A915</NID>
-              <NAME>scePaf_4129A915</NAME>
+              <NAME>_ZN3paf7PhMicon6EnableEib</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x41A7BDD2</NID>
@@ -10058,7 +11448,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x4EA868E6</NID>
-              <NAME>scePaf_4EA868E6</NAME>
+              <NAME>_ZNK3paf8PhWidget10GetTextureERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4FC2470C</NID>
@@ -10169,6 +11559,10 @@
               <NAME>_ZN3paf7PhXmBar16SetTopLabelAlphaEfff</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x56855329</NID>
+              <NAME>scePaf_56855329</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x56F4D69F</NID>
               <NAME>_ZN10PSJSObjectC2ERK11PSJSContext</NAME>
             </FUNCTION>
@@ -10206,7 +11600,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5C4BF618</NID>
-              <NAME>scePaf_5C4BF618</NAME>
+              <NAME>_ZN3paf7Surface10AttachCLUTERKNS_12SurfaceRCPtrINS_11SurfaceCLUTEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5C5F727C</NID>
@@ -10219,6 +11613,10 @@
             <FUNCTION>
               <NID>0x5CE11C03</NID>
               <NAME>_ZN3paf7PhMicon11SetChannelsEi</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x5CE4C6C9</NID>
+              <NAME>scePaf_5CE4C6C9</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5D242D11</NID>
@@ -10250,7 +11648,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5EFC5387</NID>
-              <NAME>scePaf_5EFC5387</NAME>
+              <NAME>_ZN3paf10MessageBox30SetQueryProgressBarInfoHandlerEPFvPNS0_15ProgressBarInfoEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5FAC9869</NID>
@@ -10262,7 +11660,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x607713A6</NID>
-              <NAME>scePaf_607713A6</NAME>
+              <NAME>_ZN3paf10MessageBox25SetQueryButtonInfoHandlerEPFbNS0_10ButtonTypeEPNS0_10ButtonInfoEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x60CBB63F</NID>
@@ -10394,7 +11792,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CE39EF8</NID>
-              <NAME>scePaf_6CE39EF8</NAME>
+              <NAME>_ZNK3paf4View13GetBottomPageEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CF44237</NID>
@@ -10553,6 +11951,10 @@
               <NAME>_ZN3paf10PhMenuList10WidgetTypeEv</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x7C94404D</NID>
+              <NAME>scePaf_7C94404D</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x7D83FB20</NID>
               <NAME>_ZN9PSJSValuenaEj</NAME>
             </FUNCTION>
@@ -10590,7 +11992,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8117E6C8</NID>
-              <NAME>scePaf_8117E6C8</NAME>
+              <NAME>_ZN3paf4View19PsjsCompleteSuspendEPvS1_S1_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8159EB28</NID>
@@ -10634,7 +12036,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x84913A3A</NID>
-              <NAME>scePaf_84913A3A</NAME>
+              <NAME>_ZNK3paf7PhMicon7GetTimeEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x849ED670</NID>
@@ -10654,7 +12056,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x86A5AE7D</NID>
-              <NAME>scePaf_86A5AE7D</NAME>
+              <NAME>_ZNK3paf7PhMicon10GetBGColorEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x86B41BA3</NID>
@@ -10690,11 +12092,11 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x89582FD0</NID>
-              <NAME>scePaf_89582FD0</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetHeightEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8A51BA1E</NID>
-              <NAME>scePaf_8A51BA1E</NAME>
+              <NAME>_ZNK3paf7PhMicon9IsEnabledEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8A861692</NID>
@@ -10750,7 +12152,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8E757709</NID>
-              <NAME>scePaf_8E757709</NAME>
+              <NAME>_ZNK9PSJSValue8ToStringEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x8F12B63A</NID>
@@ -10783,6 +12185,10 @@
             <FUNCTION>
               <NID>0x927854C5</NID>
               <NAME>_ZN3paf8PhWidget8ShowFadeEfbi</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x92A13795</NID>
+              <NAME>scePaf_92A13795</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x92A46B32</NID>
@@ -10822,7 +12228,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x95708BC0</NID>
-              <NAME>scePaf_95708BC0</NAME>
+              <NAME>_ZN3paf7PhMicon8SetMovieERKNS_10MiconRCPtrINS_13MovieResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x95948FB6</NID>
@@ -10838,7 +12244,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x962FA087</NID>
-              <NAME>scePaf_962FA087</NAME>
+              <NAME>_ZN3paf8PhAppear12ShadowRenderEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x96610AE6</NID>
@@ -10862,7 +12268,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x986FEBD1</NID>
-              <NAME>scePaf_986FEBD1</NAME>
+              <NAME>_ZN3paf4View15SetEventHandlerEPKNS_18EventFunctionEntryE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9870A25B</NID>
@@ -10914,7 +12320,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9D1633BC</NID>
-              <NAME>scePaf_9D1633BC</NAME>
+              <NAME>_ZNK3paf4View8ArgumentcvfEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9D496842</NID>
@@ -10962,7 +12368,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA3761F27</NID>
-              <NAME>scePaf_A3761F27</NAME>
+              <NAME>_ZN3paf7PhMicon7SetLoopEff</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA4B48F00</NID>
@@ -11018,7 +12424,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAAA8D3DA</NID>
-              <NAME>scePaf_AAA8D3DA</NAME>
+              <NAME>_ZN3paf9PhHandler11SetDeleteCBEPFvPNS_8PhWidgetEPNS_7PhEventEPvES5_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAAD0EE78</NID>
@@ -11046,7 +12452,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAD1721B8</NID>
-              <NAME>scePaf_AD1721B8</NAME>
+              <NAME>_ZN8PSJSExec16FinalizeExecSyncEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAD43F865</NID>
@@ -11122,7 +12528,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xB52E43FB</NID>
-              <NAME>scePaf_B52E43FB</NAME>
+              <NAME>_Z33PSJS_RecycleValue_TemporaryObjectRK11PSJSContextR9PSJSValue</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB61E88F2</NID>
@@ -11210,7 +12616,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBBDE1C17</NID>
-              <NAME>scePaf_BBDE1C17</NAME>
+              <NAME>_ZN3paf4View18PsjsCompleteResumeEPvS1_S1_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD49CAEF</NID>
@@ -11246,7 +12652,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC01BF169</NID>
-              <NAME>scePaf_C01BF169</NAME>
+              <NAME>_ZN8PSJSExec10RegistExecEPFvPvS0_S0_bES0_S0_S0_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC1FAF826</NID>
@@ -11282,7 +12688,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC85155C9</NID>
-              <NAME>scePaf_C85155C9</NAME>
+              <NAME>_ZN3paf7PhMicon8SetMusicERKNS_10MiconRCPtrINS_13MusicResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xC8E7B03F</NID>
@@ -11302,7 +12708,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xCA8CDF32</NID>
-              <NAME>scePaf_CA8CDF32</NAME>
+              <NAME>_ZN3paf7PhModel17SetTexturePaletteERKNS_12SurfaceRCPtrINS_7SurfaceEEEif</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xCAB439DF</NID>
@@ -11378,7 +12784,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xCFF2B69C</NID>
-              <NAME>scePaf_CFF2B69C</NAME>
+              <NAME>_ZN3paf8PhWidget10SetTextureERKNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD02C0D2E</NID>
@@ -11402,7 +12808,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD153385E</NID>
-              <NAME>scePaf_D153385E</NAME>
+              <NAME>_ZN3paf7PhMicon10SetBGColorERK4vec4</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD16E5935</NID>
@@ -11414,7 +12820,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD188831A</NID>
-              <NAME>scePaf_D188831A</NAME>
+              <NAME>_ZN8PSJSExec28RegistFinalExecWithClearSyncEPFvPvS0_S0_bES0_S0_S0_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD1EE972C</NID>
@@ -11434,7 +12840,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD2C94856</NID>
-              <NAME>scePaf_D2C94856</NAME>
+              <NAME>_ZN13PSJSValueImpl11NewFromPoolERK11PSJSContextP10PSJSObject</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD2E0D705</NID>
@@ -11482,7 +12888,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD5372E90</NID>
-              <NAME>scePaf_D5372E90</NAME>
+              <NAME>_ZN3paf4View20SetVirtualScreenSizeEPvii</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xD587826C</NID>
@@ -11610,7 +13016,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDE75C2BA</NID>
-              <NAME>scePaf_DE75C2BA</NAME>
+              <NAME>_ZNK3paf7PhMicon7GetLoopEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDEDF238F</NID>
@@ -11618,7 +13024,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDEF9EBE7</NID>
-              <NAME>scePaf_DEF9EBE7</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetMovieERNS_10MiconRCPtrINS_13MovieResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDF887DED</NID>
@@ -11634,7 +13040,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDFC8650C</NID>
-              <NAME>scePaf_DFC8650C</NAME>
+              <NAME>_ZN3paf10MessageBox25SetMessageBoxSoundHandlerEPFvNS0_9SoundTypeEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDFD3E855</NID>
@@ -11718,7 +13124,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEBDC149C</NID>
-              <NAME>scePaf_EBDC149C</NAME>
+              <NAME>_ZN3paf11SurfaceCLUTC1E9ImageModePvi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xECE59E24</NID>
@@ -11742,15 +13148,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEE10AEF1</NID>
-              <NAME>scePaf_EE10AEF1</NAME>
+              <NAME>_ZNK3paf7PhModel17GetTexturePaletteERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEF346632</NID>
-              <NAME>scePaf_EF346632</NAME>
+              <NAME>_ZN13PSJSValueImpl11NewFromPoolERK11PSJSContextRK10psjsstring</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEF52945B</NID>
-              <NAME>scePaf_EF52945B</NAME>
+              <NAME>_ZN3paf8PhWidget10SetTimeoutEifPFvPS0_PNS_7PhTimerEiPvES4_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF0B4CAE7</NID>
@@ -11782,7 +13188,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF23F3226</NID>
-              <NAME>scePaf_F23F3226</NAME>
+              <NAME>_ZNK3paf7PhMicon8GetMusicERNS_10MiconRCPtrINS_13MusicResourceEEE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF247A0BD</NID>
@@ -11806,7 +13212,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF3967AF5</NID>
-              <NAME>scePaf_F3967AF5</NAME>
+              <NAME>_Z25PSJS_BuildValueImpl_ErrorRK11PSJSContext19PSJS_EXCEPTION_TYPEPKc</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF4404EAF</NID>
@@ -11814,7 +13220,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF47CA1C2</NID>
-              <NAME>scePaf_F47CA1C2</NAME>
+              <NAME>_ZN3paf9PhHandler11SetCallBackEiPFvPNS_8PhWidgetEPNS_7PhEventEPvES5_</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF49F3C59</NID>
@@ -11835,6 +13241,10 @@
             <FUNCTION>
               <NID>0xF6F3E99E</NID>
               <NAME>_ZN3paf17PhAppearBtnShadowC1EPKNS_8PhWidgetE</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF7912F20</NID>
+              <NAME>scePaf_F7912F20</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xF7FB133E</NID>
@@ -11866,7 +13276,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA78AF39</NID>
-              <NAME>scePaf_FA78AF39</NAME>
+              <NAME>_ZNK3paf7PhMicon9GetVolumeEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFA87D725</NID>
@@ -11894,7 +13304,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFCABD0E7</NID>
-              <NAME>scePaf_FCABD0E7</NAME>
+              <NAME>_ZNK3paf7PhModel15GetTextureImageERNS_12SurfaceRCPtrINS_7SurfaceEEEi</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFCB4E053</NID>
@@ -11954,7 +13364,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0E8A3B52</NID>
-              <NAME>scePaf_0E8A3B52</NAME>
+              <NAME>_ZNK3paf9PhSRender12SetupTextureERKNS_12SurfaceRCPtrINS_7SurfaceEEERK4vec4</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x0F2615A4</NID>
@@ -11998,7 +13408,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6F33D1DF</NID>
-              <NAME>scePaf_6F33D1DF</NAME>
+              <NAME>_ZN3paf4View16StopAnimSequenceEPNS_8PhWidgetE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x70B92642</NID>
@@ -12022,7 +13432,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x7BBD70F0</NID>
-              <NAME>scePaf_7BBD70F0</NAME>
+              <NAME>_ZN8PSJSHeapC1EPvj</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x85112756</NID>
@@ -12030,15 +13440,19 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x910BCFE1</NID>
-              <NAME>scePaf_910BCFE1</NAME>
+              <NAME>_ZN8PSJSExec21RegistExecTopPriorityEPFvPvS0_S0_bES0_S0_S0_b</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x9DED6118</NID>
               <NAME>_ZN8PSJSHeap14private_mallocEj</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0xA6F1DBDD</NID>
+              <NAME>scePaf_A6F1DBDD</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0xB09203B0</NID>
-              <NAME>scePaf_B09203B0</NAME>
+              <NAME>_ZNK3paf4View9GetWidgetEPv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xBA1F20EE</NID>
@@ -12093,12 +13507,20 @@
               <NAME>sce_paf_private_ferror</NAME>
             </FUNCTION>
             <FUNCTION>
+              <NID>0x241D0B88</NID>
+              <NAME>scePaf_241D0B88</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x281B3AD6</NID>
+              <NAME>scePaf_281B3AD6</NAME>
+            </FUNCTION>
+            <FUNCTION>
               <NID>0x539F2583</NID>
               <NAME>_ZN3paf15CriticalSection5LeaveEv</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7116224C</NID>
-              <NAME>scePaf_7116224C</NAME>
+              <NAME>_ZN3paf11PhLabelText21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x80E521C5</NID>
@@ -12114,7 +13536,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9DD9CA07</NID>
-              <NAME>scePaf_9DD9CA07</NAME>
+              <NAME>_ZN3paf10PhInfoList21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xB884B031</NID>
@@ -12150,16 +13572,33 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xF639E5E1</NID>
-              <NAME>scePaf_F639E5E1</NAME>
+              <NAME>_ZN3paf6PhText21SetPrivateSurfacePoolEPNS_11SurfacePoolE</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
       </LIBRARIES>
-    </PRXFILE>
-    <PRXFILE>
-      <PRX>pafmini.prx</PRX>
-      <PRXNAME>scePaf_Module</PRXNAME>
-      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>peq.prx</PRX>
@@ -12205,7 +13644,38 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>photo_plugin.prx</PRX>
+      <PRXNAME>photo_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>power.prx</PRX>
@@ -12703,6 +14173,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13137,6 +14625,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13279,6 +14785,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13401,6 +14925,28 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13497,6 +15043,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13554,6 +15118,24 @@
             <FUNCTION>
               <NID>0xF16EAF4F</NID>
               <NAME>sceNetAdhocMatchingDelete</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -13675,6 +15257,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -13760,6 +15360,24 @@
             <FUNCTION>
               <NID>0xE11BAFAB</NID>
               <NAME>sceNetApctlDelInternalHandler</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -13905,15 +15523,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x3D905F34</NID>
-              <NAME>sceNetInet_lib_3D905F34</NAME>
+              <NAME>sceNetConfigGetRouteInfo</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x3FDDB0BA</NID>
-              <NAME>sceNetInet_lib_3FDDB0BA</NAME>
+              <NAME>sceNetConfigDelDefaultRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4459EAAF</NID>
-              <NAME>sceNetInet_lib_4459EAAF</NAME>
+              <NAME>sceNetConfigAddRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x4C13BE10</NID>
@@ -13921,23 +15539,23 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x4F68DB0E</NID>
-              <NAME>sceNetInet_lib_4F68DB0E</NAME>
+              <NAME>sceNetConfigSetIfaddr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x5155EC8A</NID>
-              <NAME>sceNetInet_lib_5155EC8A</NAME>
+              <NAME>sceNetConfigGetIfaddr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x59561561</NID>
-              <NAME>sceNetInet_lib_59561561</NAME>
+              <NAME>sceNetConfigAddArp</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6A046357</NID>
-              <NAME>sceNetInet_lib_6A046357</NAME>
+              <NAME>sceNetConfigDelIfaddr</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7776A492</NID>
-              <NAME>sceNetInet_lib_7776A492</NAME>
+              <NAME>sceNetConfigSetDefaultRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0x7CB1D9E3</NID>
@@ -13949,15 +15567,15 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x8FE19FC4</NID>
-              <NAME>sceNetInet_lib_8FE19FC4</NAME>
+              <NAME>sceNetConfigGetDefaultRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAAF4895A</NID>
-              <NAME>sceNetInet_lib_AAF4895A</NAME>
+              <NAME>sceNetConfigSetDNS</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAC9D90A5</NID>
-              <NAME>sceNetInet_lib_AC9D90A5</NAME>
+              <NAME>sceNetConfigGetDNS</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xAEE60F84</NID>
@@ -13973,7 +15591,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDC38FEE9</NID>
-              <NAME>sceNetInet_lib_DC38FEE9</NAME>
+              <NAME>sceNetConfigDelArp</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xDE9E5174</NID>
@@ -13981,19 +15599,37 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE6F67D14</NID>
-              <NAME>sceNetInet_lib_E6F67D14</NAME>
+              <NAME>sceNetConfigFlushRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xEB7A7E4F</NID>
-              <NAME>sceNetInet_lib_EB7A7E4F</NAME>
+              <NAME>sceNetConfigDelRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA94A75E7</NID>
-              <NAME>sceNetInet_lib_A94A75E7</NAME>
+              <NAME>sceNetConfigAddMRoute</NAME>
             </FUNCTION>
             <FUNCTION>
               <NID>0xFDE938A7</NID>
-              <NAME>sceNetInet_lib_FDE938A7</NAME>
+              <NAME>sceNetConfigDelMRoute</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14034,6 +15670,24 @@
             <FUNCTION>
               <NID>0xF3370E61</NID>
               <NAME>sceNetResolverInit</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14082,6 +15736,24 @@
             <FUNCTION>
               <NID>0xF624C1A0</NID>
               <NAME>scePwmReferDuty</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14248,6 +15920,24 @@
             <FUNCTION>
               <NID>0xFA8A5739</NID>
               <NAME>sceRegCloseRegistry</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14601,7 +16291,76 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>savedata_auto_dialog.prx</PRX>
+      <PRXNAME>sceVshSDAuto_Module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>savedata_plugin.prx</PRX>
+      <PRXNAME>sceVshSDPlugin_Module</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>savedata_utility.prx</PRX>
+      <PRXNAME>sceVshSDUtility_Module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>semawm.prx</PRX>
@@ -14630,6 +16389,24 @@
             <FUNCTION>
               <NID>0x77C42467</NID>
               <NAME>sceSemawm_77C42467</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14664,6 +16441,24 @@
             <FUNCTION>
               <NID>0x71EEF62D</NID>
               <NAME>sceSircsSend</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14778,6 +16573,20 @@
             <FUNCTION>
               <NID>0xF78BA90A</NID>
               <NAME>sceKernelStderr</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -14958,6 +16767,24 @@
             <FUNCTION>
               <NID>0xEC6F1CF2</NID>
               <NAME>strcpy</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -15425,7 +17252,42 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>sysconf_plugin.prx</PRX>
+      <PRXNAME>sysconf_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>sysmem.prx</PRX>
@@ -15960,6 +17822,20 @@
             <FUNCTION>
               <NID>0x68D55505</NID>
               <NAME>sceKernelReferSysEventHandlers</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -16579,6 +18455,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -16624,6 +18518,24 @@
             <FUNCTION>
               <NID>0xC99073E3</NID>
               <NAME>sceSTimerAlloc</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -17689,6 +19601,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -17730,6 +19656,20 @@
             <FUNCTION>
               <NID>0xD91079E3</NID>
               <NAME>sceKernelUart4SendBytes</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -17790,6 +19730,24 @@
             <FUNCTION>
               <NID>0xCAAFFE8D</NID>
               <NAME>sceUmd9660_driver_CAAFFE8D</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -18105,7 +20063,42 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>update_plugin.prx</PRX>
+      <PRXNAME>update_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>usb.prx</PRX>
@@ -18237,6 +20230,28 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -18289,6 +20304,24 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -18325,7 +20358,59 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>usbstormgr.prx</PRX>
+      <PRXNAME>sceUSB_Stor_Mgr_Driver</PRXNAME>
+      <LIBRARIES/>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>usbstorms.prx</PRX>
+      <PRXNAME>sceUSB_Stor_Ms_Driver</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>usersystemlib.prx</PRX>
@@ -18354,6 +20439,20 @@
             <FUNCTION>
               <NID>0xB55249D2</NID>
               <NAME>sceKernelIsCpuIntrEnable</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -18608,6 +20707,20 @@
             <FUNCTION>
               <NID>0xEF5BC2D1</NID>
               <NAME>sceUtilityDialogGetStructVersion</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -18889,6 +21002,20 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
     <PRXFILE>
@@ -18952,6 +21079,24 @@
             <FUNCTION>
               <NID>0xDCC18F25</NID>
               <NAME>sceVaudio_driver_DCC18F25</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -19021,7 +21166,42 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
       </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>video_plugin.prx</PRX>
+      <PRXNAME>video_plugin_module</PRXNAME>
+      <LIBRARIES/>
     </PRXFILE>
     <PRXFILE>
       <PRX>videocodec.prx</PRX>
@@ -19084,6 +21264,24 @@
             <FUNCTION>
               <NID>0xCB3312D1</NID>
               <NAME>sceVideocodecEndEntry</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -19357,16 +21555,18 @@
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
-      </LIBRARIES>
-    </PRXFILE>
-    <PRXFILE>
-      <PRX>vshmain.prx</PRX>
-      <PRXNAME>vsh_module</PRXNAME>
-      <LIBRARIES>
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
           <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
             <FUNCTION>
               <NID>0xCEE8593C</NID>
               <NAME>module_stop</NAME>
@@ -19374,6 +21574,170 @@
             <FUNCTION>
               <NID>0xD632ACDB</NID>
               <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F7C276C</NID>
+              <NAME>module_start_thread_parameter</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+      </LIBRARIES>
+    </PRXFILE>
+    <PRXFILE>
+      <PRX>vshmain.prx</PRX>
+      <PRXNAME>vsh_module</PRXNAME>
+      <LIBRARIES>
+        <LIBRARY>
+          <NAME>vsh</NAME>
+          <FLAGS>0x00010000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x0B8DE38E</NID>
+              <NAME>_ZN11PageManager13ReturnTopmenuEi</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0E20CEEC</NID>
+              <NAME>_ZN11PageManager3PopEv</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x0F2F6718</NID>
+              <NAME>_ZN11PageManager4InitEPN3paf4ViewE</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x182745AF</NID>
+              <NAME>vvvGetVersion</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x1A62E6EA</NID>
+              <NAME>vsh_1A62E6EA</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2695A5B8</NID>
+              <NAME>vsh_2695A5B8</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2F25CF15</NID>
+              <NAME>vsh_2F25CF15</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x34DA1B67</NID>
+              <NAME>vsh_34DA1B67</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x3E00F3B4</NID>
+              <NAME>vsh_3E00F3B4</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x4A619A1D</NID>
+              <NAME>vsh_4A619A1D</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x5452A47B</NID>
+              <NAME>_ZN11PageManagerC2Ei</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x58925420</NID>
+              <NAME>vsh_58925420</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x5E43E468</NID>
+              <NAME>_ZN11PageManager4PushEPKc</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x61FE226A</NID>
+              <NAME>_ZN11PageManager4ExitEv</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x6286E89D</NID>
+              <NAME>vsh_6286E89D</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x78A67F41</NID>
+              <NAME>vsh_78A67F41</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x7ADF6A69</NID>
+              <NAME>_ZN11PageManager5ClearEv</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x7DA81064</NID>
+              <NAME>vsh_7DA81064</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x80FB409B</NID>
+              <NAME>vsh_80FB409B</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x81BBD0D1</NID>
+              <NAME>vsh_81BBD0D1</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xA3C7DF11</NID>
+              <NAME>vsh_A3C7DF11</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xAA8B9556</NID>
+              <NAME>_ZN3vsh15RaiseFatalErrorEj</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xB55C095C</NID>
+              <NAME>vsh_B55C095C</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD0A3A365</NID>
+              <NAME>vsh_D0A3A365</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xEF3DAF7D</NID>
+              <NAME>vsh_EF3DAF7D</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF1A72B42</NID>
+              <NAME>vsh_F1A72B42</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xFDEE4109</NID>
+              <NAME>vsh_FDEE4109</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x2B8B7775</NID>
+              <NAME>_ZN3vsh16RebootSafeMemory8SetBlockENS0_5BlockEPvj</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x595F8E64</NID>
+              <NAME>vsh_595F8E64</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x741C9BE1</NID>
+              <NAME>_ZN3vsh16RebootSafeMemory8GetBlockENS0_5BlockEPvj</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xB55DCA45</NID>
+              <NAME>vsh_B55DCA45</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x163B90CB</NID>
+              <NAME>vsh_163B90CB</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x71C15234</NID>
+              <NAME>vsh_71C15234</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x7B9AA4D4</NID>
+              <NAME>vsh_7B9AA4D4</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0x8F76CA2A</NID>
+              <NAME>vsh_8F76CA2A</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xA0CBE1FE</NID>
+              <NAME>vsh_A0CBE1FE</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
@@ -19574,6 +21938,28 @@
             <FUNCTION>
               <NID>0x8D5F551B</NID>
               <NAME>sceWlanDrv_lib_8D5F551B</NAME>
+            </FUNCTION>
+          </FUNCTIONS>
+        </LIBRARY>
+        <LIBRARY>
+          <NAME>syslib</NAME>
+          <FLAGS>0x80000000</FLAGS>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0x2F064FA6</NID>
+              <NAME>module_reboot_before</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xCEE8593C</NID>
+              <NAME>module_stop</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
             </FUNCTION>
           </FUNCTIONS>
         </LIBRARY>
