@@ -12792,7 +12792,17 @@
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
-          <FUNCTIONS/>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xADF12745</NID>
+              <NAME>module_reboot_phase</NAME>
+              <VERSIONS>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+          </FUNCTIONS>
         </LIBRARY>
       </LIBRARIES>
     </PRXFILE>

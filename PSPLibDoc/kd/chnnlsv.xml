@@ -603,6 +603,26 @@
               <NAME>sceSdCleanList</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -700,6 +720,26 @@
               <NAME>sceSdSetMember</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -797,6 +837,26 @@
               <NAME>sceSdCreateList</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -894,6 +954,26 @@
               <NAME>sceSdGetLastIndex</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -991,6 +1071,26 @@
               <NAME>sceSdSetIndex</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -1088,6 +1188,26 @@
               <NAME>sceSdRemoveValue</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>

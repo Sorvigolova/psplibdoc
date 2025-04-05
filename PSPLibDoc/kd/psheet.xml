@@ -700,6 +700,17 @@
               <NAME>sceDRMInstallGetPkgInfo</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -797,6 +808,17 @@
               <NAME>sceDRMInstallAbort</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -894,6 +916,17 @@
               <NAME>sceDRMInstallInit</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -991,6 +1024,17 @@
               <NAME>sceDRMInstallGetFileInfo</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -1088,6 +1132,17 @@
               <NAME>sceDRMInstallGetProgress</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -1185,6 +1240,17 @@
               <NAME>sceDRMInstallEnd</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>
@@ -1282,6 +1348,17 @@
               <NAME>sceDRMInstallInstall</NAME>
               <SOURCE>matching</SOURCE>
               <VERSIONS>
+                <VERSION>2.70</VERSION>
+                <VERSION>2.71</VERSION>
+                <VERSION>2.80</VERSION>
+                <VERSION>2.81</VERSION>
+                <VERSION>2.82</VERSION>
+                <VERSION>3.00</VERSION>
+                <VERSION>3.01</VERSION>
+                <VERSION>3.02</VERSION>
+                <VERSION>3.03</VERSION>
+                <VERSION>3.10</VERSION>
+                <VERSION>3.11</VERSION>
                 <VERSION>3.30</VERSION>
                 <VERSION>3.40</VERSION>
                 <VERSION>3.50</VERSION>

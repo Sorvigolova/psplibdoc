@@ -12804,7 +12804,17 @@
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
-          <FUNCTIONS/>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+              <VERSIONS>
+                <VERSION>vita-0.931</VERSION>
+                <VERSION>vita-0.940</VERSION>
+                <VERSION>vita-0.945</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+          </FUNCTIONS>
         </LIBRARY>
       </LIBRARIES>
     </PRXFILE>

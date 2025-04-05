@@ -38,7 +38,7 @@ def loadPSPLibdoc(xmlFile):
 
 	return entries
 
-def updatePSPLibdoc(nidEntries, xmlFile):
+def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 	xmlParser = ET.XMLParser(strip_cdata=False, remove_blank_text=True)
 	tree = ET.parse(xmlFile, xmlParser)
 	root = tree.getroot()
@@ -51,31 +51,53 @@ def updatePSPLibdoc(nidEntries, xmlFile):
 	for entry in nidEntries:
 		entries[entry.nid] = entry
 
-	for library in root.findall("PRXFILES/PRXFILE/LIBRARIES/LIBRARY"):
+	for prx in root.findall("PRXFILES/PRXFILE"):
+		prxFile = prx.find("PRX").text
+		for library in prx.findall("LIBRARIES/LIBRARY"):
 			libraryName = library.find("NAME").text
+			nidList = []
 			for function in library.findall("FUNCTIONS/FUNCTION"):
 				numTotalFunctions = numTotalFunctions + 1
 				functionNID = function.find("NID").text.upper().removeprefix('0X')
+				nidList.append(functionNID)
 				functionName = function.find("NAME").text
 				libDocNidNameUnk = functionName.upper().endswith(functionNID)
 
 				if libDocNidNameUnk:
 					numUnkFunctions = numUnkFunctions + 1
 
-				if functionNID in entries:
+				if functionNID in entries and entries[functionNID].libraryName == libraryName and entries[functionNID].prx == prxFile:
 					nidEntry = entries[functionNID]
 					dictNidNameUnk = nidEntry.name.upper().endswith(functionNID)
 
 					if libDocNidNameUnk and not dictNidNameUnk:
 						print("Updating {} -> {}".format(functionName, nidEntry.name))
 						numUpdatedFunctions = numUpdatedFunctions + 1
+						function.find("NAME").text = nidEntry.name
 
-					function.find("NAME").text = nidEntry.name
+					if version is not None:
+						newver = sorted(set([x.text for x in function.findall("VERSIONS/VERSION")] + [version]))
+						versions = function.find("VERSIONS")
+						for v in versions.findall("VERSION"):
+						    versions.remove(v)
+						for v in newver:
+							ET.SubElement(versions, "VERSION").text = v
+
 					if len(nidEntry.source) > 0:
 						if function.find("SOURCE") is not None:
 							function.find("SOURCE").text = nidEntry.source
 						else:
 							ET.SubElement(function, "SOURCE").text = nidEntry.source
+
+			for nid in entries:
+				if entries[nid].libraryName == libraryName and entries[nid].prx == prxFile and nid not in nidList:
+					print("need to add", entries[nid])
+					funcs = library.find("FUNCTIONS")
+					func = ET.SubElement(funcs, "FUNCTION")
+					ET.SubElement(func, "NID").text = '0x' + nid.upper()
+					ET.SubElement(func, "NAME").text = entries[nid].name
+					versions = ET.SubElement(func, "VERSIONS")
+					ET.SubElement(versions, "VERSION").text = version
 
 	functionsKnown = numTotalFunctions - numUnkFunctions + numUpdatedFunctions
 	print("{:#04}/{:#04} unknown NIDs updated".format(numUpdatedFunctions, numUnkFunctions))
@@ -362,7 +384,7 @@ if __name__ == '__main__':
 			nidEntries.extend(ppssppEntries)
 
 	if(args.updateLibdoc):
-		updatePSPLibdoc(nidEntries, args.updateLibdoc)
+		updatePSPLibdoc(nidEntries, args.updateLibdoc, args.firmwareVersion)
 
 	if(args.exportNids):
 		exportNids(nidEntries, args.exportNids)
