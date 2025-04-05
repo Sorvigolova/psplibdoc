@@ -3054,6 +3054,31 @@
             </VARIABLE>
           </VARIABLES>
         </LIBRARY>
+        <LIBRARY>
+          <NAME>sceUsbSer</NAME>
+          <FLAGS>0x40070011</FLAGS>
+          <VARIABLES>
+            <VARIABLE>
+              <NID>0x0F28C4EF</NID>
+              <NAME>sceUsbSer_0F28C4EF</NAME>
+              <VERSIONS>
+                <VERSION>5.70</VERSION>
+                <VERSION>6.00</VERSION>
+                <VERSION>6.10</VERSION>
+                <VERSION>6.20</VERSION>
+                <VERSION>6.30</VERSION>
+                <VERSION>6.31</VERSION>
+                <VERSION>6.35</VERSION>
+                <VERSION>6.36</VERSION>
+                <VERSION>6.37</VERSION>
+                <VERSION>6.38</VERSION>
+                <VERSION>6.39</VERSION>
+                <VERSION>6.60</VERSION>
+                <VERSION>6.61</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+          </VARIABLES>
+        </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
   </PRXFILES>

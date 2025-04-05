@@ -66,11 +66,9 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 		for library in prx.findall("LIBRARIES/LIBRARY"):
 			libraryName = library.find("NAME").text
 			libraryList.append(libraryName)
-			nidList = []
-			for (nidtype, funvar) in [('fun', x) for x in library.findall("FUNCTIONS/FUNCTION")] + [('var', x) for x in library.findall("VARIABLES/VARIABLE")]:
+			for funvar in library.findall("FUNCTIONS/FUNCTION") + library.findall("VARIABLES/VARIABLE"):
 				numTotalFunctions = numTotalFunctions + 1
 				funvarNID = funvar.find("NID").text.upper().removeprefix('0X')
-				nidList.append((nidtype, funvarNID))
 				funvarName = funvar.find("NAME").text
 				libDocNidNameUnk = funvarName.upper().endswith(funvarNID)
 
@@ -104,10 +102,17 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 			if entries[nid].prx == prxFile and entries[nid].libraryName not in libraryList:
 				libs = prx.find("LIBRARIES")
 				lib = ET.SubElement(libs, "LIBRARY")
-				ET.SubElement(lib, "NAME").text = nidEntry.libraryName
-				ET.SubElement(lib, "FLAGS").text = nidEntry.libraryFlags
+				ET.SubElement(lib, "NAME").text = entries[nid].libraryName
+				ET.SubElement(lib, "FLAGS").text = entries[nid].libraryFlags
+				libraryList.append(entries[nid].libraryName)
 
 		for library in prx.findall("LIBRARIES/LIBRARY"):
+			libraryName = library.find("NAME").text
+			nidList = []
+			for (nidtype, funvar) in [('fun', x) for x in library.findall("FUNCTIONS/FUNCTION")] + [('var', x) for x in library.findall("VARIABLES/VARIABLE")]:
+				funvarNID = funvar.find("NID").text.upper().removeprefix('0X')
+				nidList.append((nidtype, funvarNID))
+
 			for nid in entries:
 				if entries[nid].libraryName == libraryName and entries[nid].prx == prxFile and (entries[nid].nidtype, nid) not in nidList:
 					name = "FUNCTION" if entries[nid].nidtype == 'fun' else "VARIABLE"
