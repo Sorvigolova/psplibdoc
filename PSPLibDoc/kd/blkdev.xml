@@ -174,7 +174,40 @@
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
-          <FUNCTIONS/>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+              <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+          </FUNCTIONS>
+          <VARIABLES>
+            <VARIABLE>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+              <VERSIONS>
+                <VERSION>1.00</VERSION>
+                <VERSION>1.03</VERSION>
+                <VERSION>1.50</VERSION>
+                <VERSION>1.51</VERSION>
+                <VERSION>1.52</VERSION>
+                <VERSION>2.00</VERSION>
+                <VERSION>2.01</VERSION>
+                <VERSION>2.50</VERSION>
+                <VERSION>2.60</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+          </VARIABLES>
         </LIBRARY>
       </LIBRARIES>
     </PRXFILE>

@@ -26,7 +26,54 @@
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
-          <FUNCTIONS/>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+              <VERSIONS>
+                <VERSION>vita-0.931</VERSION>
+                <VERSION>vita-0.940</VERSION>
+                <VERSION>vita-0.945</VERSION>
+                <VERSION>vita-0.990</VERSION>
+                <VERSION>vita-0.995</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+            <FUNCTION>
+              <NID>0xD632ACDB</NID>
+              <NAME>module_start</NAME>
+              <VERSIONS>
+                <VERSION>vita-0.931</VERSION>
+                <VERSION>vita-0.940</VERSION>
+                <VERSION>vita-0.945</VERSION>
+                <VERSION>vita-0.990</VERSION>
+                <VERSION>vita-0.995</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+          </FUNCTIONS>
+          <VARIABLES>
+            <VARIABLE>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+              <VERSIONS>
+                <VERSION>vita-0.931</VERSION>
+                <VERSION>vita-0.940</VERSION>
+                <VERSION>vita-0.945</VERSION>
+                <VERSION>vita-0.990</VERSION>
+                <VERSION>vita-0.995</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+            <VARIABLE>
+              <NID>0x11B97506</NID>
+              <NAME>module_sdk_version</NAME>
+              <VERSIONS>
+                <VERSION>vita-0.931</VERSION>
+                <VERSION>vita-0.940</VERSION>
+                <VERSION>vita-0.945</VERSION>
+                <VERSION>vita-0.990</VERSION>
+                <VERSION>vita-0.995</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+          </VARIABLES>
         </LIBRARY>
       </LIBRARIES>
     </PRXFILE>

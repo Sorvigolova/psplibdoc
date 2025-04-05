@@ -10,7 +10,7 @@ import sys
 from collections import namedtuple
 from lxml import etree as ET
 
-NIDEntry = namedtuple('NIDEntry', ['nid', 'name', 'prx', 'prxName', 'libraryName', 'libraryFlags', 'versions', 'source'])
+NIDEntry = namedtuple('NIDEntry', ['nidtype', 'nid', 'name', 'prx', 'prxName', 'libraryName', 'libraryFlags', 'versions', 'source'])
 
 def compute_nid(name):
 	return hashlib.sha1(name.encode('ascii')).digest()[:4][::-1].hex().upper()
@@ -32,7 +32,16 @@ def loadPSPLibdoc(xmlFile):
 				versions = [x.text for x in function.findall("VERSIONS/VERSION")]
 				source_elem = function.find("SOURCE")
 				source = '' if source_elem is None else ('' if source_elem.text is None else source_elem.text)
-				entries.append(NIDEntry(nid=functionNID, name=functionName, prx=prxFile,
+				entries.append(NIDEntry(nidtype='fun', nid=functionNID, name=functionName, prx=prxFile,
+										prxName=prxName, libraryName=libraryName, libraryFlags=libraryFlags,
+										versions=versions, source=source))
+			for variable in library.findall("VARIABLES/VARIABLE"):
+				variableNID = variable.find("NID").text.upper().removeprefix('0X')
+				variableName = variable.find("NAME").text
+				versions = [x.text for x in variable.findall("VERSIONS/VERSION")]
+				source_elem = variable.find("SOURCE")
+				source = '' if source_elem is None else ('' if source_elem.text is None else source_elem.text)
+				entries.append(NIDEntry(nidtype='var', nid=variableNID, name=variableName, prx=prxFile,
 										prxName=prxName, libraryName=libraryName, libraryFlags=libraryFlags,
 										versions=versions, source=source))
 
@@ -53,50 +62,62 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 
 	for prx in root.findall("PRXFILES/PRXFILE"):
 		prxFile = prx.find("PRX").text
+		libraryList = []
 		for library in prx.findall("LIBRARIES/LIBRARY"):
 			libraryName = library.find("NAME").text
+			libraryList.append(libraryName)
 			nidList = []
-			for function in library.findall("FUNCTIONS/FUNCTION"):
+			for (nidtype, funvar) in [('fun', x) for x in library.findall("FUNCTIONS/FUNCTION")] + [('var', x) for x in library.findall("VARIABLES/VARIABLE")]:
 				numTotalFunctions = numTotalFunctions + 1
-				functionNID = function.find("NID").text.upper().removeprefix('0X')
-				nidList.append(functionNID)
-				functionName = function.find("NAME").text
-				libDocNidNameUnk = functionName.upper().endswith(functionNID)
+				funvarNID = funvar.find("NID").text.upper().removeprefix('0X')
+				nidList.append((nidtype, funvarNID))
+				funvarName = funvar.find("NAME").text
+				libDocNidNameUnk = funvarName.upper().endswith(funvarNID)
 
 				if libDocNidNameUnk:
 					numUnkFunctions = numUnkFunctions + 1
 
-				if functionNID in entries and entries[functionNID].libraryName == libraryName and entries[functionNID].prx == prxFile:
-					nidEntry = entries[functionNID]
-					dictNidNameUnk = nidEntry.name.upper().endswith(functionNID)
+				if funvarNID in entries and entries[funvarNID].libraryName == libraryName and entries[funvarNID].prx == prxFile:
+					nidEntry = entries[funvarNID]
+					dictNidNameUnk = nidEntry.name.upper().endswith(funvarNID)
 
 					if libDocNidNameUnk and not dictNidNameUnk:
-						print("Updating {} -> {}".format(functionName, nidEntry.name))
+						print("Updating {} -> {}".format(funvarName, nidEntry.name))
 						numUpdatedFunctions = numUpdatedFunctions + 1
-						function.find("NAME").text = nidEntry.name
+						funvar.find("NAME").text = nidEntry.name
 
 					if version is not None:
-						newver = sorted(set([x.text for x in function.findall("VERSIONS/VERSION")] + [version]))
-						versions = function.find("VERSIONS")
+						newver = sorted(set([x.text for x in funvar.findall("VERSIONS/VERSION")] + [version]))
+						versions = funvar.find("VERSIONS")
 						for v in versions.findall("VERSION"):
-						    versions.remove(v)
+							versions.remove(v)
 						for v in newver:
 							ET.SubElement(versions, "VERSION").text = v
 
 					if len(nidEntry.source) > 0:
-						if function.find("SOURCE") is not None:
-							function.find("SOURCE").text = nidEntry.source
+						if funvar.find("SOURCE") is not None:
+							funvar.find("SOURCE").text = nidEntry.source
 						else:
-							ET.SubElement(function, "SOURCE").text = nidEntry.source
+							ET.SubElement(funvar, "SOURCE").text = nidEntry.source
 
+		for nid in entries:
+			if entries[nid].prx == prxFile and entries[nid].libraryName not in libraryList:
+				libs = prx.find("LIBRARIES")
+				lib = ET.SubElement(libs, "LIBRARY")
+				ET.SubElement(lib, "NAME").text = nidEntry.libraryName
+				ET.SubElement(lib, "FLAGS").text = nidEntry.libraryFlags
+
+		for library in prx.findall("LIBRARIES/LIBRARY"):
 			for nid in entries:
-				if entries[nid].libraryName == libraryName and entries[nid].prx == prxFile and nid not in nidList:
-					print("need to add", entries[nid])
-					funcs = library.find("FUNCTIONS")
-					func = ET.SubElement(funcs, "FUNCTION")
-					ET.SubElement(func, "NID").text = '0x' + nid.upper()
-					ET.SubElement(func, "NAME").text = entries[nid].name
-					versions = ET.SubElement(func, "VERSIONS")
+				if entries[nid].libraryName == libraryName and entries[nid].prx == prxFile and (entries[nid].nidtype, nid) not in nidList:
+					name = "FUNCTION" if entries[nid].nidtype == 'fun' else "VARIABLE"
+					funvars = library.find(name + "S")
+					if funvars is None:
+						funvars = ET.SubElement(library, name + "S")
+					funvar = ET.SubElement(funvars, name)
+					ET.SubElement(funvar, "NID").text = '0x' + nid.upper()
+					ET.SubElement(funvar, "NAME").text = entries[nid].name
+					versions = ET.SubElement(funvar, "VERSIONS")
 					ET.SubElement(versions, "VERSION").text = version
 
 	functionsKnown = numTotalFunctions - numUnkFunctions + numUpdatedFunctions

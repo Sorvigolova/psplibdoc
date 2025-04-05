@@ -1227,6 +1227,43 @@
               </VERSIONS>
             </FUNCTION>
           </FUNCTIONS>
+          <VARIABLES>
+            <VARIABLE>
+              <NID>0xC39C1AB9</NID>
+              <NAME>LoadExecForKernel_C39C1AB9</NAME>
+              <VERSIONS>
+                <VERSION>5.70</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+            <VARIABLE>
+              <NID>0x54B39392</NID>
+              <NAME>LoadExecForKernel_54B39392</NAME>
+              <VERSIONS>
+                <VERSION>6.10</VERSION>
+                <VERSION>6.20</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+            <VARIABLE>
+              <NID>0xF0F395A1</NID>
+              <NAME>LoadExecForKernel_F0F395A1</NAME>
+              <VERSIONS>
+                <VERSION>6.30</VERSION>
+                <VERSION>6.31</VERSION>
+                <VERSION>6.35</VERSION>
+                <VERSION>6.37</VERSION>
+                <VERSION>6.38</VERSION>
+                <VERSION>6.39</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+            <VARIABLE>
+              <NID>0xAE9EFC0D</NID>
+              <NAME>LoadExecForKernel_AE9EFC0D</NAME>
+              <VERSIONS>
+                <VERSION>6.60</VERSION>
+                <VERSION>6.61</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+          </VARIABLES>
         </LIBRARY>
         <LIBRARY>
           <NAME>LoadExecForUser</NAME>
@@ -1360,7 +1397,61 @@
         <LIBRARY>
           <NAME>syslib</NAME>
           <FLAGS>0x80000000</FLAGS>
-          <FUNCTIONS/>
+          <FUNCTIONS>
+            <FUNCTION>
+              <NID>0xD3744BE0</NID>
+              <NAME>module_bootstart</NAME>
+              <VERSIONS>
+                <VERSION>5.70</VERSION>
+                <VERSION>6.10</VERSION>
+                <VERSION>6.20</VERSION>
+                <VERSION>6.30</VERSION>
+                <VERSION>6.31</VERSION>
+                <VERSION>6.35</VERSION>
+                <VERSION>6.37</VERSION>
+                <VERSION>6.38</VERSION>
+                <VERSION>6.39</VERSION>
+                <VERSION>6.60</VERSION>
+                <VERSION>6.61</VERSION>
+              </VERSIONS>
+            </FUNCTION>
+          </FUNCTIONS>
+          <VARIABLES>
+            <VARIABLE>
+              <NID>0xF01D73A7</NID>
+              <NAME>module_info</NAME>
+              <VERSIONS>
+                <VERSION>5.70</VERSION>
+                <VERSION>6.10</VERSION>
+                <VERSION>6.20</VERSION>
+                <VERSION>6.30</VERSION>
+                <VERSION>6.31</VERSION>
+                <VERSION>6.35</VERSION>
+                <VERSION>6.37</VERSION>
+                <VERSION>6.38</VERSION>
+                <VERSION>6.39</VERSION>
+                <VERSION>6.60</VERSION>
+                <VERSION>6.61</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+            <VARIABLE>
+              <NID>0x11B97506</NID>
+              <NAME>module_sdk_version</NAME>
+              <VERSIONS>
+                <VERSION>5.70</VERSION>
+                <VERSION>6.10</VERSION>
+                <VERSION>6.20</VERSION>
+                <VERSION>6.30</VERSION>
+                <VERSION>6.31</VERSION>
+                <VERSION>6.35</VERSION>
+                <VERSION>6.37</VERSION>
+                <VERSION>6.38</VERSION>
+                <VERSION>6.39</VERSION>
+                <VERSION>6.60</VERSION>
+                <VERSION>6.61</VERSION>
+              </VERSIONS>
+            </VARIABLE>
+          </VARIABLES>
         </LIBRARY>
       </LIBRARIES>
     </PRXFILE>
