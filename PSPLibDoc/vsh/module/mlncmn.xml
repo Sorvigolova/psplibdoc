@@ -5495,7 +5495,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD28BC98</NID>
-              <NAME>mlncmn_BD28BC98</NAME>
+              <NAME>nsnp_Init</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -6155,7 +6155,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD8F7B241</NID>
-              <NAME>mlncmn_D8F7B241</NAME>
+              <NAME>nsnp_Fin</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -7092,7 +7092,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFFF74FB7</NID>
-              <NAME>mlncmn_FFF74FB7</NAME>
+              <NAME>nsnp_FreeString</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>

@@ -874,7 +874,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE6F67D14</NID>
-              <NAME>sceNetInet_lib_E6F67D14</NAME>
+              <NAME>sceNetConfigFlushRoute</NAME>
               <VERSIONS>
                 <VERSION>vita-1.60</VERSION>
                 <VERSION>vita-1.61</VERSION>

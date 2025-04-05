@@ -83,7 +83,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x07C60A23</NID>
-              <NAME>mp4msv_07C60A23</NAME>
+              <NAME>smf_ApPs_GetBrand</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -154,7 +154,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x089364A9</NID>
-              <NAME>mp4msv_089364A9</NAME>
+              <NAME>smf_ApPl_SchSyncSampleNo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -367,7 +367,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0C0843B0</NID>
-              <NAME>mp4msv_0C0843B0</NAME>
+              <NAME>smf_ApPl_GetSampleNoByTime</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -438,7 +438,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x0D32271B</NID>
-              <NAME>mp4msv_0D32271B</NAME>
+              <NAME>smf_ApPs_GetFileProfileInfo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -651,7 +651,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x162503F3</NID>
-              <NAME>mp4msv_162503F3</NAME>
+              <NAME>smf_ApPs_GetSampleSize</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -722,7 +722,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x182FF541</NID>
-              <NAME>mp4msv_182FF541</NAME>
+              <NAME>smf_ApPs_GetMovieDuration</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -793,7 +793,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x190E442D</NID>
-              <NAME>mp4msv_190E442D</NAME>
+              <NAME>smf_ApPs_GetGraphSampleDes</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -864,7 +864,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x21BD7274</NID>
-              <NAME>mp4msv_21BD7274</NAME>
+              <NAME>smf_ApPl_GetMediaTimeBySampleNo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -1290,7 +1290,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x2B1B8D23</NID>
-              <NAME>mp4msv_2B1B8D23</NAME>
+              <NAME>smf_ApPs_GetAVCSeqParamSetSize</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -1503,7 +1503,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x3149D53B</NID>
-              <NAME>mp4msv_3149D53B</NAME>
+              <NAME>smf_ApPs_ReadFileProperty2</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -1641,7 +1641,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x35144B9C</NID>
-              <NAME>mp4msv_35144B9C</NAME>
+              <NAME>smf_ApPs_GetAVCDecoderConfigInfo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -3061,7 +3061,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6B94A29D</NID>
-              <NAME>mp4msv_6B94A29D</NAME>
+              <NAME>smf_ApPs_GetTransformationMatrix</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -3274,7 +3274,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x888C1115</NID>
-              <NAME>mp4msv_888C1115</NAME>
+              <NAME>smf_ApPs_GetODHndl</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -3771,7 +3771,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9632797F</NID>
-              <NAME>mp4msv_9632797F</NAME>
+              <NAME>smf_ApPs_GetMetaData</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -4623,7 +4623,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA824645B</NID>
-              <NAME>mp4msv_A824645B</NAME>
+              <NAME>smf_ApCm_ChangeTimeScale</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -4765,7 +4765,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAADD18E7</NID>
-              <NAME>mp4msv_AADD18E7</NAME>
+              <NAME>smf_ApPs_GetIPMPSystemData</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -4978,7 +4978,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD23D34A</NID>
-              <NAME>mp4msv_BD23D34A</NAME>
+              <NAME>smf_ApPl_IsCompatibleBrand</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -5049,7 +5049,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBE203EA3</NID>
-              <NAME>mp4msv_BE203EA3</NAME>
+              <NAME>smf_ApPs_ReadMovieRes2</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -5326,7 +5326,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xCD733822</NID>
-              <NAME>mp4msv_CD733822</NAME>
+              <NAME>smf_ApPs_GetIPMPDesInfo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -5539,7 +5539,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD070C0AA</NID>
-              <NAME>mp4msv_D070C0AA</NAME>
+              <NAME>smf_ApPs_GetODNum</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -5887,7 +5887,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE042AB3C</NID>
-              <NAME>mp4msv_E042AB3C</NAME>
+              <NAME>smf_ApPs_GetMovieTimeScale</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -6100,7 +6100,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE641D779</NID>
-              <NAME>mp4msv_E641D779</NAME>
+              <NAME>smf_ApPs_GetAVCSeqParamSet</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -6171,7 +6171,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE8DE0EB8</NID>
-              <NAME>mp4msv_E8DE0EB8</NAME>
+              <NAME>smf_ApPs_GetODInfo</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
@@ -6526,7 +6526,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFF9E6F58</NID>
-              <NAME>mp4msv_FF9E6F58</NAME>
+              <NAME>smf_ApPs_GetMediaDuration</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>

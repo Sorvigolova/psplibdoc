@@ -75,7 +75,7 @@ def updatePSPLibdoc(nidEntries, xmlFile, version=None):
 				if libDocNidNameUnk:
 					numUnkFunctions = numUnkFunctions + 1
 
-				if funvarNID in entries and entries[funvarNID].libraryName == libraryName:
+				if funvarNID in entries:# and entries[funvarNID].libraryName == libraryName:
 					nidEntry = entries[funvarNID]
 					dictNidNameUnk = nidEntry.name.upper().endswith(funvarNID)
 

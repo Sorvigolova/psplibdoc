@@ -6254,7 +6254,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xE6F67D14</NID>
-              <NAME>sceNetInet_lib_E6F67D14</NAME>
+              <NAME>sceNetConfigFlushRoute</NAME>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>

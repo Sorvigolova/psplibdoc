@@ -560,7 +560,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x685E0DA7</NID>
-              <NAME>sceAsfParser_685E0DA7</NAME>
+              <NAME>sceAsfGetNonStreamObjectInfo</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.60</VERSION>
@@ -780,7 +780,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6DA63281</NID>
-              <NAME>sceAsfParser_6DA63281</NAME>
+              <NAME>sceAsfReadUChar8</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.60</VERSION>
@@ -1173,7 +1173,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC6D98C54</NID>
-              <NAME>sceAsfParser_C6D98C54</NAME>
+              <NAME>sceAsfGetStreamObjectInfo</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.60</VERSION>

@@ -9242,7 +9242,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x3C478044</NID>
-              <NAME>sceHttp_3C478044</NAME>
+              <NAME>sceHttpsDisableOptionPrivate</NAME>
               <VERSIONS>
                 <VERSION>3.50</VERSION>
                 <VERSION>3.51</VERSION>
@@ -9336,7 +9336,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x87F1E666</NID>
-              <NAME>sceHttp_87F1E666</NAME>
+              <NAME>sceHttpsEnableOptionPrivate</NAME>
               <VERSIONS>
                 <VERSION>3.50</VERSION>
                 <VERSION>3.51</VERSION>

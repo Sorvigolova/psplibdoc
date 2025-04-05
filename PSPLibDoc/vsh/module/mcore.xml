@@ -386,7 +386,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x31074E7E</NID>
-              <NAME>mcore_31074E7E</NAME>
+              <NAME>nsnp_InitTrack</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -498,7 +498,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x48ABA61F</NID>
-              <NAME>mcore_48ABA61F</NAME>
+              <NAME>nsnp_CheckHMAC</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -642,7 +642,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5A781B3C</NID>
-              <NAME>mcore_5A781B3C</NAME>
+              <NAME>nsnp_FinTrack</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -706,7 +706,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5FB587C1</NID>
-              <NAME>mcore_5FB587C1</NAME>
+              <NAME>nsnp_SetLicense</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -818,7 +818,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x763B13C1</NID>
-              <NAME>mcore_763B13C1</NAME>
+              <NAME>nsnp_FinSession</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1010,7 +1010,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x967A82BB</NID>
-              <NAME>mcore_967A82BB</NAME>
+              <NAME>nsnp_ActionPerform</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1042,7 +1042,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x9CA6D2EB</NID>
-              <NAME>mcore_9CA6D2EB</NAME>
+              <NAME>nsnp_ActionCheck</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1154,7 +1154,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA5D19CE4</NID>
-              <NAME>mcore_A5D19CE4</NAME>
+              <NAME>nsnp_Decrypt</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1186,7 +1186,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAB3FA2FA</NID>
-              <NAME>mcore_AB3FA2FA</NAME>
+              <NAME>nsnp_FreeESB</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1250,7 +1250,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBD28BC98</NID>
-              <NAME>mcore_BD28BC98</NAME>
+              <NAME>nsnp_Init</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1282,7 +1282,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC9FAAE01</NID>
-              <NAME>mcore_C9FAAE01</NAME>
+              <NAME>nsnp_ActionDescribe</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1394,7 +1394,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD8F7B241</NID>
-              <NAME>mcore_D8F7B241</NAME>
+              <NAME>nsnp_Fin</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1410,7 +1410,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xDB9578C6</NID>
-              <NAME>mcore_DB9578C6</NAME>
+              <NAME>nsnp_InitSession</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1490,7 +1490,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFFF74FB7</NID>
-              <NAME>mcore_FFF74FB7</NAME>
+              <NAME>nsnp_FreeString</NAME>
               <VERSIONS>
                 <VERSION>4.00</VERSION>
                 <VERSION>4.01</VERSION>
@@ -1660,7 +1660,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x5F02BB10</NID>
-              <NAME>mcore_5F02BB10</NAME>
+              <NAME>nsnp_Callback</NAME>
               <VERSIONS>
                 <VERSION>5.50</VERSION>
                 <VERSION>5.51</VERSION>
