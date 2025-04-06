@@ -8135,7 +8135,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x64AA4ED6</NID>
-              <NAME>sceSsl_lib_64AA4ED6</NAME>
+              <NAME>CRYPTO_set_add_lock_cb</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.00</VERSION>
@@ -8244,6 +8244,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x665D02F6</NID>
@@ -8473,7 +8474,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x69105335</NID>
-              <NAME>sceSsl_lib_69105335</NAME>
+              <NAME>CRYPTO_get_add_lock_cb</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.00</VERSION>
@@ -8582,6 +8583,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x69F1B678</NID>
@@ -8811,7 +8813,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6BA650E4</NID>
-              <NAME>sceSsl_lib_6BA650E4</NAME>
+              <NAME>CRYPTO_get_locking_cb</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.00</VERSION>
@@ -8920,6 +8922,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x6CDEB823</NID>
@@ -13985,7 +13988,7 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xA9191C17</NID>
-              <NAME>sceSsl_lib_A9191C17</NAME>
+              <NAME>CRYPTO_set_locking_cb</NAME>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>2.00</VERSION>
@@ -14094,6 +14097,7 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
+              <SOURCE>matching</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0xA920B39E</NID>
