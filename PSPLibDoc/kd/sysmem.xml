@@ -36525,7 +36525,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x6C6887EE</NID>
-              <NAME>sceKernelLzrcDecode</NAME>
+              <NAME>sceKernelLzrc4Decode</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>3.80</VERSION>
                 <VERSION>3.90</VERSION>
@@ -36618,7 +36619,6 @@
                 <VERSION>vita-3.72</VERSION>
                 <VERSION>vita-3.73</VERSION>
               </VERSIONS>
-              <SOURCE>previous version (automated)</SOURCE>
             </FUNCTION>
             <FUNCTION>
               <NID>0x004D4DEE</NID>
