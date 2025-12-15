@@ -297,7 +297,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0x322460B6</NID>
-              <NAME>sceAta_driver_322460B6</NAME>
+              <NAME>sceAtaAhbSetAHBCtl</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>
@@ -1183,7 +1184,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xAC84FF0A</NID>
-              <NAME>sceAta_driver_AC84FF0A</NAME>
+              <NAME>sceAtaAhbSetUDMATiming</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>
@@ -1807,7 +1809,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xD6BF0B85</NID>
-              <NAME>sceAta_driver_D6BF0B85</NAME>
+              <NAME>sceAtaAhbSetMDMATiming</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>1.00</VERSION>
                 <VERSION>1.03</VERSION>
