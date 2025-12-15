@@ -2110,7 +2110,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xBA09142A</NID>
-              <NAME>sceAta_driver_BA09142A</NAME>
+              <NAME>sceAtaCheckXferReadyIE</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>1.50</VERSION>
@@ -2173,7 +2174,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xC7B02795</NID>
-              <NAME>sceAta_driver_C7B02795</NAME>
+              <NAME>sceAtaCheckPacketCmdCompleteIE</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>1.03</VERSION>
                 <VERSION>1.50</VERSION>
@@ -2460,7 +2462,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xEFE3C7FA</NID>
-              <NAME>sceAta_driver_EFE3C7FA</NAME>
+              <NAME>sceAtaAccessDataPortTS</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>2.50</VERSION>
                 <VERSION>2.60</VERSION>
@@ -2485,7 +2488,8 @@
             </FUNCTION>
             <FUNCTION>
               <NID>0xFC7B031E</NID>
-              <NAME>sceAta_driver_FC7B031E</NAME>
+              <NAME>sceAtaExecPacketCmdTS</NAME>
+              <SOURCE>matching</SOURCE>
               <VERSIONS>
                 <VERSION>2.50</VERSION>
                 <VERSION>2.60</VERSION>
